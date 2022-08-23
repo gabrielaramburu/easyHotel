@@ -1,0 +1,37 @@
+Check-out : solucionado
+-----------
+
+cuando se le da check-outn a todas las personas de una habitacion el boton CONFIRMAR y TODOS tendrian que quedar desabilitados, porque si el usuario vuelve a dar CONFIRMAR o TODOS sin haber pasajeros en la habitacion el programa cancela. Seria bueno que si se da check-out a todos los pasajeros el formulario cierre solo, y si no son todos los que salen que el boton CONFIRMAR cambie a SALIR hasta que vuelva a seleccionar a otro pax, ok?
+
+
+Cambios de situacion :SOLUCIONADO
+----------------------
+
+Seria bueno que ademas de decirnos si la habitacion esta limpia sucia, etc nos diga el estado actual de la habitacion, ocupada, libre, bloqueada, etc pero estos datos NO MODIFICABLES solo que los muestre
+
+
+Consulta completa :	SOLUCIONADO
+-------------------
+
+Gaby seria bueno habilitar este proceso, porque sirve para saber cuales son las habitaciones ocupadas, libres, reservadas, bloqueadas, etc de una sola ves, me comprende mendez
+
+ejemplo:
+
+Nro  -  Tipo de habitacion  -  Estado   -  Actual  -   
+101        Suite Junior      Reservada     Sucia
+201        Suite Junior       Ocupada      Sucia
+301        Suite Junior        Libre       Limpia
+
+Quizas me falte algun dato, pero esto seria la consulta completa que se usa bastante.
+
+
+Ubicacion de pasajeros:  SOLUCIONADO
+-----------------------
+
+Cuando se entra en este formulario y no se selecciona ningun cliente al salir queda un formulario abierto vacio, sacarlo plisssss
+
+
+
+bueno cabeza de verga estas son algunas cosillas que encontre despues te siento en la pija con mas problemillas, okkkkkkkkkk
+
+chau puta

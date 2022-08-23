@@ -1,0 +1,2 @@
+Creación de un método refresh que ejecute nuevamente 
+la consulta.	25/07/02

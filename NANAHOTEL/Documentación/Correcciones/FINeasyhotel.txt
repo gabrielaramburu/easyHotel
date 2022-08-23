@@ -1,0 +1,47 @@
+problemas Easyhotel a la fecha 10/09/2002
+
+Consulta completa:
+Se podria poner al pie del formulario los totales
+Ej: ocupadas: 5 Libres: 5 reservadas: 5, diferenciarlas con color pero solo el texto donde dice el estado de la habitacion.
+Y dar la opcion de ordenar por estado (reservadas, ocupadas, etc)
+CORREJIDO: Muestro totales y grafico por estado y situación
+
+Carga de reservas:
+No calcula la cantidad de noches cuando pierde el focus en la fecha de hasta
+CORREJIDO: Calcula el total de noches después de seleccionar una habitación
+
+
+Cuadro de disponibilidad:
+Tengo una habitacion ocupada por un periodo de 10 dias y en este cuadro no la descuenta de la disponibilidad, recien cuando le hice un cargo extra y volvi al cuadro de disponibilidad la reconocio.
+LEER NOTA
+
+Cuadro de situacion:
+Con Alt-T no va hacia el combo, va hacia la feche DESDE
+El cuadro de situacion, por lo que comprobe muestra las ocupadas cuando quiere
+LEER NOTA
+
+Gaby, a vos te parece bien que el programa muestre la fecha del sistema ??
+Te explico, en este momento para mi el programa esta trabajando en el dia jueves 12 de setiembre, pero la fecha que el programa muestra en la pantalla principal es la del sistema o sea martes 10 de setiembre, si el programa trabaja con fecha independiente, no te parece que tendria que mostrar la fecha en la cual esta trabajando el programa ?
+CORREJIDO:Todas las fecha corresponden a la fecha de la aplicación.
+
+
+Check-Out
+No olvidarse de agregar este paso en configuracion de accesos directos.
+CORREJIDO: Las opciones principales no tienen accesos directos.
+
+Walk-in
+Cuando ingrese un cliente me lo confirmo lo mas bien, pero no me lo mostro en la grilla de los que se van confirmando, cancele el walk-in y lo volvi a intentar y ahi si anduvo, ver¡¡
+Cuando selecciono el titular de la cuenta por primera ves y lo confirmo me aparece el cartel de confirmacion que dice ¿Confirma el cambio de titulares? esto esta mal porque es la primera ves que elejia el titular.
+CORREJIDO: el walkin lo probé y lo puede hacer bien.
+
+NOTA:
+-----
+	Detecte un problema en el formulario de frmCargaResreva: al modificar
+	una reserva la fecha desde en el archivo tbHAB_RESERVA quedaba en blanco.
+	Esto ocurría poruque el pasaje de datos de la tabla auxiliar se hacia mal.
+	Esta fecha en blanco originó todos los problemas aparecidos en la 
+	lógica de disponibilidad, por ejemplo habitaciones reservadas que no 
+	aparecían en el cuadro de situacioón y disponibilidad;también
+	se dejaban reservar más de una vez.
+	
+

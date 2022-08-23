@@ -1,0 +1,26 @@
+Línea 20: la clase Hotel_Nana.gaHOTELbarra del control gaHOTELbarra1 no era una clase de control cargada.
+Línea 53: la clase VcBndCtl.VcCalCombo del control Fcons no era una clase de control cargada.
+Línea 97: la clase MSFlexGridLib.MSFlexGrid del control dbIE no era una clase de control cargada.
+Línea 110: la clase ComctlLib.TabStrip del control TabStrip1 no era una clase de control cargada.
+Línea 27: el nombre de la propiedad _ExtentX de gaHOTELbarra1 no es válido.
+Línea 28: el nombre de la propiedad _ExtentY de gaHOTELbarra1 no es válido.
+Línea 59: el nombre de la propiedad _ExtentX de Fcons no es válido.
+Línea 60: el nombre de la propiedad _ExtentY de Fcons no es válido.
+Línea 61: el nombre de la propiedad _0 de Fcons no es válido.
+Línea 62: el nombre de la propiedad _1 de Fcons no es válido.
+Línea 63: el nombre de la propiedad _2 de Fcons no es válido.
+Línea 64: el nombre de la propiedad _3 de Fcons no es válido.
+Línea 65: el nombre de la propiedad _count de Fcons no es válido.
+Línea 66: el nombre de la propiedad _ver de Fcons no es válido.
+Línea 71: la propiedad Picture de botImprimir tenía una referencia a archivo no válida.
+Línea 90: la propiedad Picture de botProcesar tenía una referencia a archivo no válida.
+Línea 98: el nombre de la propiedad Bindings de dbIE no es válido.
+Línea 104: el nombre de la propiedad _ExtentX de dbIE no es válido.
+Línea 105: el nombre de la propiedad _ExtentY de dbIE no es válido.
+Línea 106: el nombre de la propiedad _Version de dbIE no es válido.
+Línea 107: el nombre de la propiedad FocusRect de dbIE no es válido.
+Línea 108: el nombre de la propiedad HighLight de dbIE no es válido.
+Línea 116: el nombre de la propiedad _ExtentX de TabStrip1 no es válido.
+Línea 117: el nombre de la propiedad _ExtentY de TabStrip1 no es válido.
+Línea 118: el nombre de la propiedad _Version de TabStrip1 no es válido.
+Línea 131: el nombre de la propiedad Tabs de TabStrip1 no es válido.

@@ -1,0 +1,37 @@
+back-up o cierre diario
+-----------------------
+
+
+en caso de tener habitaciones bloqueadas :
+
+si la habitacion bloqueada termino el periodo de bloqueo pero el usuario
+no la desbloqueo, el cierre diario automaticamente desbloquea la habitacion
+dejando en el listado un ALERTA de que se desbloqueo.
+
+lo mismo para habitaciones reservadas que paso el periodo (no show)
+
+tambien alerta de habitaciones con check-out, PERO EN ESTE CASO SOLO SE AVISA, NO SE DA CHECK-OUT
+AUTOMATICAMENTE.
+
+en estos tipo de casos siempre se deja constancia de lo que el CIERRE DIARO hizo, ejemplo:
+----------------------------------------------
+
+ALERTA DE HABITACIONES CON BLOQUEO
+
+SE DESBLOQUEO LA HABITACION 102 SUITE JUNIOR
+
+PERIODO DEL 25/05/01 AL 26/05/01
+
+----------------------------------------------
+
+ALERTA DE RESERVAS NO SHOW
+
+RESERVA Nº 00079
+
+TODOS LOS DATOS DE LA RESERVA SE MUESTRAN
+
+----------------------------------------------
+
+
+
+

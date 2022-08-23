@@ -1,0 +1,9 @@
+Dao350.dll
+stdole2.tlb
+Son archivos necesarios para la ejecución de esta aplicación
+la cual esta pensada para ejecutrase en un disquette.
+
+De todas maneras como esta aplicación se utiliza
+depués de instalar la versión demo, no debería dar problemas
+su ejecución ya que estos archivos se instalan con cualquier
+aplicación que utilize un control data. 

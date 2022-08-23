@@ -1,0 +1,56 @@
+Línea 18: la clase ComctlLib.Toolbar del control Toolbar1 no era una clase de control cargada.
+Línea 39: la clase Hotel_Nana.gaHOTELbarra del control gaHOTELbarra1 no era una clase de control cargada.
+Línea 49: la clase MSFlexGridLib.MSFlexGrid del control gDerecha no era una clase de control cargada.
+Línea 75: la clase ComctlLib.ImageList del control ImageList2 no era una clase de control cargada.
+Línea 109: la clase ComctlLib.ImageList del control ImageList1 no era una clase de control cargada.
+Línea 173: la clase ComctlLib.TreeView del control twMenu no era una clase de control cargada.
+Línea 189: la clase ComctlLib.ListView del control lwDerecha no era una clase de control cargada.
+Línea 25: el nombre de la propiedad _ExtentX de Toolbar1 no es válido.
+Línea 26: el nombre de la propiedad _ExtentY de Toolbar1 no es válido.
+Línea 27: el nombre de la propiedad ButtonWidth de Toolbar1 no es válido.
+Línea 28: el nombre de la propiedad ButtonHeight de Toolbar1 no es válido.
+Línea 30: el nombre de la propiedad _Version de Toolbar1 no es válido.
+Línea 37: el nombre de la propiedad Buttons de Toolbar1 no es válido.
+Línea 46: el nombre de la propiedad _ExtentX de gaHOTELbarra1 no es válido.
+Línea 47: el nombre de la propiedad _ExtentY de gaHOTELbarra1 no es válido.
+Línea 56: el nombre de la propiedad _ExtentX de gDerecha no es válido.
+Línea 57: el nombre de la propiedad _ExtentY de gDerecha no es válido.
+Línea 58: el nombre de la propiedad _Version de gDerecha no es válido.
+Línea 59: el nombre de la propiedad FixedCols de gDerecha no es válido.
+Línea 60: el nombre de la propiedad BackColorBkg de gDerecha no es válido.
+Línea 61: el nombre de la propiedad Redraw de gDerecha no es válido.
+Línea 62: el nombre de la propiedad FocusRect de gDerecha no es válido.
+Línea 63: el nombre de la propiedad HighLight de gDerecha no es válido.
+Línea 64: el nombre de la propiedad GridLines de gDerecha no es válido.
+Línea 65: el nombre de la propiedad SelectionMode de gDerecha no es válido.
+Línea 78: el nombre de la propiedad _ExtentX de ImageList2 no es válido.
+Línea 79: el nombre de la propiedad _ExtentY de ImageList2 no es válido.
+Línea 81: el nombre de la propiedad ImageWidth de ImageList2 no es válido.
+Línea 82: el nombre de la propiedad ImageHeight de ImageList2 no es válido.
+Línea 83: el nombre de la propiedad MaskColor de ImageList2 no es válido.
+Línea 84: el nombre de la propiedad _Version de ImageList2 no es válido.
+Línea 107: el nombre de la propiedad Images de ImageList2 no es válido.
+Línea 112: el nombre de la propiedad _ExtentX de ImageList1 no es válido.
+Línea 113: el nombre de la propiedad _ExtentY de ImageList1 no es válido.
+Línea 115: el nombre de la propiedad ImageWidth de ImageList1 no es válido.
+Línea 116: el nombre de la propiedad ImageHeight de ImageList1 no es válido.
+Línea 117: el nombre de la propiedad MaskColor de ImageList1 no es válido.
+Línea 118: el nombre de la propiedad UseMaskColor de ImageList1 no es válido.
+Línea 119: el nombre de la propiedad _Version de ImageList1 no es válido.
+Línea 150: el nombre de la propiedad Images de ImageList1 no es válido.
+Línea 179: el nombre de la propiedad _ExtentX de twMenu no es válido.
+Línea 180: el nombre de la propiedad _ExtentY de twMenu no es válido.
+Línea 181: el nombre de la propiedad _Version de twMenu no es válido.
+Línea 182: el nombre de la propiedad Indentation de twMenu no es válido.
+Línea 183: el nombre de la propiedad LineStyle de twMenu no es válido.
+Línea 184: el nombre de la propiedad Style de twMenu no es válido.
+Línea 185: el nombre de la propiedad ImageList de twMenu no es válido.
+Línea 195: el nombre de la propiedad _ExtentX de lwDerecha no es válido.
+Línea 196: el nombre de la propiedad _ExtentY de lwDerecha no es válido.
+Línea 197: el nombre de la propiedad View de lwDerecha no es válido.
+Línea 198: el nombre de la propiedad LabelWrap de lwDerecha no es válido.
+Línea 199: el nombre de la propiedad HideSelection de lwDerecha no es válido.
+Línea 200: el nombre de la propiedad _Version de lwDerecha no es válido.
+Línea 201: el nombre de la propiedad Icons de lwDerecha no es válido.
+Línea 202: el nombre de la propiedad SmallIcons de lwDerecha no es válido.
+Línea 207: el nombre de la propiedad NumItems de lwDerecha no es válido.

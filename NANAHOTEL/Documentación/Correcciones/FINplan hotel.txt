@@ -1,0 +1,27 @@
+Fecha de escrito esto: 20/04/02
+1 implementar mejoras a cuadro de situación	'done
+2 implemnetar mejoras a ver disponibilidad	'done
+3 implementar mejoras a cambio de titular	'done
+5 diseñar e implementar la mayor cantidad posible de arreglos funcionales
+  concretamente en teclas.
+	5.1	correción de formularios	'done
+	5.2	teclas de función		'done
+	5.3	información en línea		'done
+	5.4	mensajes de error		'done
+	5.5	mostrar o no cuadros de re-ingreso.	'done
+
+6 implementar código de validación de borrado, para los formularios de mantenimiento.	done
+	6.1	implementación de formulario de mantenimiento genérico			done
+	6.2	implementación de ocx de mantenimiento					done
+	6.3	implementación de ocx de selección					done
+	6.4	implementar tabla monedas						done
+	6.5	implementar tabla sexo							done
+	6.6	implementar tabla estado_civil						done
+
+7 implementar pantalla de presentación en hotel, bitácora y perfiles de usuarios	'done
+8 eliminar parpadéo en perfiles de usuario						'done
+
+implementar planilla de control de calidad para: formularios
+
+
+fin 30/07/02

@@ -1,0 +1,42 @@
+VER DISPONIBILIDAD
+------------------
+
+Muestra 21 dias (ver si es lo correcto)
+Poner calendario (tipo agenda) para que el usuario tenga mas facilidad de manejo
+Poder saltar solo de 7 en 7 dias, creo que ahora salta casi 20 dias por lo menos en mi version
+
+FACTURACION
+-----------
+
+Se podria implementar una AYUDA en CONSULTO FACTURA,ANULO FACTURA
+para que sea mas facil de buscar. Lo mismo para los recibos.	Solucionado 21/08/01
+06:19 p.m. 21/08/01
+Falta mostrar los totales cuando se va a facturar.	Solucionado 28/08/01
+y que sume el numero cuando se anula algun documento.	Solucionado
+
+ESTADO DE CUENTA
+----------------
+
+Se podria implementar tanto en estado de cuenta por pax como por empresa un resumen GENERICO o sea darle la opcion al usuario que pueda ver todos los estados de cuenta ordenados alfabeticamente.
+
+CAMBIO DE HABITACION				Solucionado	21/08/01
+--------------------
+El formulario que muestra de principio es muy largo me parece.
+NOTA: creo que quedo un poco más lindo.
+
+
+FORMULARIOS					solucionado	21/08/01
+-----------
+
+Hay muchos formularios que todavia no cierran con ESC y no saltan con ENTER.
+NOTA: cuando se está posicionado sobre alguna fecha no 
+anda.
+
+
+UBICACION DE PASAJEROS				Solucionado	21/08/01
+----------------------
+Solucionar el tema de los titulos de las busquedas, nombre_completo_titular, etc , etc
+y con los otros formularios de este tipo de busqueda pasa lo mismo.
+
+
+	

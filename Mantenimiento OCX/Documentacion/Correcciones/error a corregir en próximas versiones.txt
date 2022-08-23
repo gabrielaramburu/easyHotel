@@ -1,0 +1,13 @@
+12/06/02	Al cambiar de posición un campo en la grilla de campos,
+hecho		no se habilita la opción de aplicar en la página de propiedades,
+		por lo que es necesario indicar changed=true, tanto para el boton subir
+		como el bajar.
+
+23/06/02	Cuando se ejecuta el método MostrarBotones para ocultar un botón
+hecho		'si cambio de mantenimeinto ese botón sigue oculto y esto
+		esta mal.
+
+25/07/02	El evento SeGraboTabla devuelve mal el número clave modificado
+
+25/07/02	Anada para el orto la primera fila, por lo que cansela si no se
+		ubica bien primero.

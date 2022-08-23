@@ -1,0 +1,948 @@
+VERSION 5.00
+Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
+Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.1#0"; "COMDLG32.OCX"
+Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
+Begin VB.PropertyPage SeleccionGeneral 
+   Caption         =   "General"
+   ClientHeight    =   6750
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   6735
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   6750
+   ScaleWidth      =   6735
+   Begin MSComDlg.CommonDialog CommonDialog1 
+      Left            =   4440
+      Top             =   6000
+      _ExtentX        =   847
+      _ExtentY        =   847
+      _Version        =   327680
+   End
+   Begin VB.Frame Frame1 
+      Caption         =   "General"
+      Height          =   6495
+      Left            =   120
+      TabIndex        =   6
+      Top             =   120
+      Width           =   6495
+      Begin VB.TextBox txtTeclaSeleccion 
+         Height          =   285
+         Left            =   3120
+         MaxLength       =   3
+         TabIndex        =   4
+         Top             =   1680
+         Width           =   855
+      End
+      Begin VB.TextBox txtIndCampoRetorno 
+         Height          =   285
+         Left            =   4920
+         MaxLength       =   5
+         TabIndex        =   3
+         Top             =   1080
+         Width           =   855
+      End
+      Begin VB.TextBox txtTablaPrincipal 
+         Height          =   285
+         Left            =   240
+         MaxLength       =   255
+         TabIndex        =   1
+         Top             =   1080
+         Width           =   2535
+      End
+      Begin VB.CommandButton botDirSel 
+         Caption         =   "?"
+         Height          =   285
+         Left            =   5880
+         TabIndex        =   5
+         Top             =   480
+         Width           =   375
+      End
+      Begin VB.TextBox txtIndCampoInicial 
+         Height          =   285
+         Left            =   3120
+         MaxLength       =   5
+         TabIndex        =   2
+         Top             =   1080
+         Width           =   855
+      End
+      Begin VB.TextBox txtCaminoBaseDeDatos 
+         Height          =   285
+         Left            =   240
+         MaxLength       =   255
+         TabIndex        =   0
+         Top             =   480
+         Width           =   5535
+      End
+      Begin TabDlg.SSTab SSTab1 
+         Height          =   4455
+         Left            =   240
+         TabIndex        =   9
+         Top             =   1800
+         Width           =   6015
+         _ExtentX        =   10610
+         _ExtentY        =   7858
+         _Version        =   327680
+         Style           =   1
+         Tabs            =   2
+         TabsPerRow      =   2
+         TabHeight       =   520
+         TabCaption(0)   =   "Tablas"
+         TabPicture(0)   =   "SeleccionGeneral.pgx":0000
+         Tab(0).ControlCount=   11
+         Tab(0).ControlEnabled=   -1  'True
+         Tab(0).Control(0)=   "Label7"
+         Tab(0).Control(0).Enabled=   0   'False
+         Tab(0).Control(1)=   "Label9"
+         Tab(0).Control(1).Enabled=   0   'False
+         Tab(0).Control(2)=   "Label10"
+         Tab(0).Control(2).Enabled=   0   'False
+         Tab(0).Control(3)=   "Label11"
+         Tab(0).Control(3).Enabled=   0   'False
+         Tab(0).Control(4)=   "Label12"
+         Tab(0).Control(4).Enabled=   0   'False
+         Tab(0).Control(5)=   "gTablas"
+         Tab(0).Control(5).Enabled=   0   'False
+         Tab(0).Control(6)=   "botAgregarTabla"
+         Tab(0).Control(6).Enabled=   0   'False
+         Tab(0).Control(7)=   "botEliminarTabla"
+         Tab(0).Control(7).Enabled=   0   'False
+         Tab(0).Control(8)=   "txtTablaRelacionada"
+         Tab(0).Control(8).Enabled=   0   'False
+         Tab(0).Control(9)=   "txtIndCampoClaveTablaRel"
+         Tab(0).Control(9).Enabled=   0   'False
+         Tab(0).Control(10)=   "txtIndCampoTablaPrincipal"
+         Tab(0).Control(10).Enabled=   0   'False
+         TabCaption(1)   =   "Campos"
+         TabPicture(1)   =   "SeleccionGeneral.pgx":001C
+         Tab(1).ControlCount=   13
+         Tab(1).ControlEnabled=   0   'False
+         Tab(1).Control(0)=   "cboTablas"
+         Tab(1).Control(0).Enabled=   -1  'True
+         Tab(1).Control(1)=   "txtAnchoPre"
+         Tab(1).Control(1).Enabled=   -1  'True
+         Tab(1).Control(2)=   "botEliminarVal"
+         Tab(1).Control(2).Enabled=   -1  'True
+         Tab(1).Control(3)=   "botAgregarVal"
+         Tab(1).Control(3).Enabled=   -1  'True
+         Tab(1).Control(4)=   "botSubir"
+         Tab(1).Control(4).Enabled=   -1  'True
+         Tab(1).Control(5)=   "botBajar"
+         Tab(1).Control(5).Enabled=   -1  'True
+         Tab(1).Control(6)=   "txtIndCampo"
+         Tab(1).Control(6).Enabled=   -1  'True
+         Tab(1).Control(7)=   "txtDescCampo"
+         Tab(1).Control(7).Enabled=   -1  'True
+         Tab(1).Control(8)=   "gCampos"
+         Tab(1).Control(8).Enabled=   0   'False
+         Tab(1).Control(9)=   "Label2"
+         Tab(1).Control(9).Enabled=   0   'False
+         Tab(1).Control(10)=   "Label6"
+         Tab(1).Control(10).Enabled=   0   'False
+         Tab(1).Control(11)=   "Label5"
+         Tab(1).Control(11).Enabled=   0   'False
+         Tab(1).Control(12)=   "Label4"
+         Tab(1).Control(12).Enabled=   0   'False
+         Begin VB.TextBox txtIndCampoTablaPrincipal 
+            Height          =   360
+            Left            =   240
+            MaxLength       =   5
+            TabIndex        =   29
+            Top             =   1560
+            Width           =   855
+         End
+         Begin VB.TextBox txtIndCampoClaveTablaRel 
+            Height          =   360
+            Left            =   3240
+            MaxLength       =   5
+            TabIndex        =   28
+            Top             =   840
+            Width           =   855
+         End
+         Begin VB.TextBox txtTablaRelacionada 
+            Height          =   360
+            Left            =   240
+            MaxLength       =   255
+            TabIndex        =   27
+            Top             =   840
+            Width           =   2655
+         End
+         Begin VB.CommandButton botEliminarTabla 
+            Caption         =   "Eliminar"
+            Height          =   375
+            Left            =   5160
+            TabIndex        =   33
+            Top             =   2880
+            Width           =   735
+         End
+         Begin VB.CommandButton botAgregarTabla 
+            Caption         =   "Agregar"
+            Height          =   375
+            Left            =   5160
+            TabIndex        =   31
+            Top             =   2400
+            Width           =   735
+         End
+         Begin VB.ComboBox cboTablas 
+            Height          =   360
+            Left            =   -74760
+            Style           =   2  'Dropdown List
+            TabIndex        =   11
+            Top             =   1320
+            Width           =   2295
+         End
+         Begin VB.TextBox txtAnchoPre 
+            Height          =   360
+            Left            =   -74760
+            MaxLength       =   5
+            TabIndex        =   13
+            Top             =   2040
+            Width           =   855
+         End
+         Begin VB.CommandButton botEliminarVal 
+            Caption         =   "Eliminar"
+            Height          =   375
+            Left            =   -69840
+            TabIndex        =   15
+            Top             =   2880
+            Width           =   735
+         End
+         Begin VB.CommandButton botAgregarVal 
+            Caption         =   "Agregar"
+            Height          =   375
+            Left            =   -69840
+            TabIndex        =   14
+            Top             =   2460
+            Width           =   735
+         End
+         Begin VB.CommandButton botSubir 
+            Height          =   240
+            Left            =   -69840
+            Picture         =   "SeleccionGeneral.pgx":0038
+            Style           =   1  'Graphical
+            TabIndex        =   16
+            Top             =   3900
+            Width           =   735
+         End
+         Begin VB.CommandButton botBajar 
+            Height          =   240
+            Left            =   -69840
+            Picture         =   "SeleccionGeneral.pgx":01E2
+            Style           =   1  'Graphical
+            TabIndex        =   17
+            Top             =   4140
+            Width           =   735
+         End
+         Begin VB.TextBox txtIndCampo 
+            Height          =   360
+            Left            =   -71520
+            MaxLength       =   5
+            TabIndex        =   12
+            Top             =   1320
+            Width           =   855
+         End
+         Begin VB.TextBox txtDescCampo 
+            Height          =   360
+            Left            =   -74760
+            TabIndex        =   10
+            Top             =   660
+            Width           =   4095
+         End
+         Begin MSFlexGridLib.MSFlexGrid gCampos 
+            Height          =   1935
+            Left            =   -74760
+            TabIndex        =   18
+            Top             =   2400
+            Width           =   4815
+            _ExtentX        =   8493
+            _ExtentY        =   3413
+            _Version        =   393216
+            Cols            =   4
+            FixedCols       =   0
+            AllowUserResizing=   1
+         End
+         Begin MSFlexGridLib.MSFlexGrid gTablas 
+            Height          =   1935
+            Left            =   240
+            TabIndex        =   34
+            Top             =   2400
+            Width           =   4815
+            _ExtentX        =   8493
+            _ExtentY        =   3413
+            _Version        =   393216
+            Cols            =   3
+            FixedCols       =   0
+            AllowUserResizing=   1
+         End
+         Begin VB.Label Label12 
+            AutoSize        =   -1  'True
+            Caption         =   "Ind. campo en tabla principal"
+            Height          =   195
+            Left            =   240
+            TabIndex        =   32
+            Top             =   1320
+            Width           =   2040
+         End
+         Begin VB.Label Label11 
+            AutoSize        =   -1  'True
+            Caption         =   "Ind. campo clave tabla rel."
+            Height          =   195
+            Left            =   3240
+            TabIndex        =   30
+            Top             =   600
+            Width           =   1875
+         End
+         Begin VB.Label Label10 
+            AutoSize        =   -1  'True
+            Caption         =   "Tabla relacionada"
+            Height          =   195
+            Left            =   240
+            TabIndex        =   26
+            Top             =   600
+            Width           =   1275
+         End
+         Begin VB.Label Label9 
+            AutoSize        =   -1  'True
+            Caption         =   "Tablas relacionada N a 1 con la tabla principal"
+            Height          =   195
+            Left            =   240
+            TabIndex        =   25
+            Top             =   2160
+            Width           =   3285
+         End
+         Begin VB.Label Label7 
+            Caption         =   "Label7"
+            Height          =   15
+            Left            =   240
+            TabIndex        =   23
+            Top             =   600
+            Width           =   1335
+         End
+         Begin VB.Label Label2 
+            AutoSize        =   -1  'True
+            Caption         =   "Nombre de tabla"
+            Height          =   195
+            Left            =   -74760
+            TabIndex        =   22
+            Top             =   1080
+            Width           =   1170
+         End
+         Begin VB.Label Label6 
+            AutoSize        =   -1  'True
+            Caption         =   "Ancho predeterminado"
+            Height          =   195
+            Left            =   -74760
+            TabIndex        =   21
+            Top             =   1800
+            Width           =   1605
+         End
+         Begin VB.Label Label5 
+            AutoSize        =   -1  'True
+            Caption         =   "Ind. del campo en la tabla"
+            Height          =   240
+            Left            =   -71520
+            TabIndex        =   20
+            Top             =   1080
+            Width           =   2295
+         End
+         Begin VB.Label Label4 
+            AutoSize        =   -1  'True
+            Caption         =   "Descripción del campo"
+            Height          =   195
+            Left            =   -74760
+            TabIndex        =   19
+            Top             =   420
+            Width           =   1620
+         End
+      End
+      Begin VB.Label Label14 
+         AutoSize        =   -1  'True
+         Caption         =   "Código tecla de selección"
+         Height          =   195
+         Left            =   3120
+         TabIndex        =   36
+         Top             =   1440
+         Width           =   1830
+      End
+      Begin VB.Label Label13 
+         AutoSize        =   -1  'True
+         Caption         =   "Ind. campo ret."
+         Height          =   240
+         Left            =   4920
+         TabIndex        =   35
+         Top             =   840
+         Width           =   1305
+      End
+      Begin VB.Label Label8 
+         AutoSize        =   -1  'True
+         Caption         =   "Tabla principal"
+         Height          =   195
+         Left            =   240
+         TabIndex        =   24
+         Top             =   840
+         Width           =   1035
+      End
+      Begin VB.Label Label3 
+         AutoSize        =   -1  'True
+         Caption         =   "Nro. campo incial"
+         Height          =   195
+         Left            =   3120
+         TabIndex        =   8
+         Top             =   840
+         Width           =   1230
+      End
+      Begin VB.Label Label1 
+         AutoSize        =   -1  'True
+         Caption         =   "Camino y nombre de base de datos"
+         Height          =   195
+         Left            =   240
+         TabIndex        =   7
+         Top             =   240
+         Width           =   2490
+      End
+   End
+End
+Attribute VB_Name = "SeleccionGeneral"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+'Declaración de constantes
+Private Const cAnchoPredeterminado As Integer = 1500    'ancho predeterminado para las columnas
+                                                        'de la grilla de selección
+
+Private Sub PropertyPage_SelectionChanged()
+    'Cargo las propiedades del control a la página de propiedades
+    On Error GoTo error
+    Dim campos As String
+    Dim tablasR As String
+    
+    'NOTA: por algún motivo que no pude determinar este evento se ejecuta dos veces:
+    'cuando llamo a la página de propiedades la primera vez después de haber creado
+    'la instancia en tiempo de diseño del control
+    
+    'inicializo grilla
+    PropertyPage.gCampos.Clear
+    PropertyPage.gTablas.Clear
+    mSubLimpioGrilla PropertyPage.gCampos, True
+    mSubLimpioGrilla PropertyPage.gTablas, True
+
+    'Creo cabezal de grilla campos
+    gCampos.FormatString = "Ind. | Tabla                  | Descripción del campo                         | Ancho pred. "
+    'Creo cabezal de grilla de tablas relacionadas
+    gTablas.FormatString = "Ind. campo t.prin. | Tabla relacionada |Ind. campo clave t. rel."
+    
+    'cargo las propiedades del frame General
+    PropertyPage.txtCaminoBaseDeDatos = SelectedControls(0).BaseDeDatos
+    PropertyPage.txtTablaPrincipal = SelectedControls(0).tabla
+    PropertyPage.txtIndCampoInicial = SelectedControls(0).NroCampoInicial
+    PropertyPage.txtIndCampoRetorno = SelectedControls(0).IndiceCampoRetorno
+    PropertyPage.txtTeclaSeleccion = SelectedControls(0).TeclaSeleccion
+    'cargo la grilla de campos
+    campos = SelectedControls(0).campos
+    subMuestroCamposEnGrilla campos, gCampos
+    'cargo grilla de tablas
+    tablasR = SelectedControls(0).TablasRelacionadas
+    subMuestroCamposEnGrilla tablasR, gTablas
+    PropertyPage.Refresh
+Exit Sub
+error:
+    mSubControloErroresPropiedades "PropertyPage_SelectionChanged"
+End Sub
+
+Private Sub subMuestroCamposEnGrilla(campos As String, g As MSFlexGrid)
+    'Recorro el string y muestro información de la propiedad en la grilla determinada por el parámetro
+    On Error GoTo error
+    Dim largo As String
+    Dim cadaCampo As String
+    Dim caracter As String
+    
+    Dim i As Integer
+    
+    largo = Len(campos)                 'obtengo largo total del string
+    i = 1
+    Do While i <= largo
+        caracter = Mid(campos, i, 1)    'obtengo todos y cada uno de los caracteres
+                                        'que componen la propiedad campos
+        If caracter = ";" Then  '; indica nuevo campo
+            'cada campo se asigna a una columna diferente en la grilla de campos
+            caracter = Chr(9)   'chr(9) indica nueva columna
+        End If
+        If caracter = "@" Then  '@ indica que finaliza el campo
+            'creo una fila en la grilla de campos
+            g.AddItem ""
+            mSubRangoCeldas g, 0, _
+                            g.Cols - 1, _
+                            g.Rows - 1, _
+                            g.Rows - 1
+            g.Clip = cadaCampo
+            cadaCampo = ""  'inicializo para cargar información de un nuevo campo
+        Else
+            cadaCampo = cadaCampo & caracter
+        End If
+        i = i + 1
+    Loop
+Exit Sub
+error:
+    mSubControloErroresPropiedades "SubMuestroCamposEnGrilla"
+End Sub
+    
+Private Sub PropertyPage_ApplyChanges()
+    'Grabo las propiedades del control
+    On Error GoTo error
+    'grabo propiedades del frame General
+    If funValidoDatosGeneral Then
+        SelectedControls(0).BaseDeDatos = PropertyPage.txtCaminoBaseDeDatos.Text
+        SelectedControls(0).tabla = PropertyPage.txtTablaPrincipal.Text
+        SelectedControls(0).NroCampoInicial = Val(PropertyPage.txtIndCampoInicial.Text)
+        SelectedControls(0).IndiceCampoRetorno = Val(PropertyPage.txtIndCampoRetorno.Text)
+        'grabo propiedad campos
+        SelectedControls(0).campos = funGraboPropiedadCampos
+        'grabo propiedad tablas
+        SelectedControls(0).TablasRelacionadas = funGraboPropiedadTablasRelacionadas
+        SelectedControls(0).TeclaSeleccion = Val(txtTeclaSeleccion.Text)
+    End If
+Exit Sub
+error:
+mSubControloErroresPropiedades "PropertyPage_ApplyChanges"
+End Sub
+
+Private Function funValidoDatosGeneral() As Boolean
+    'Valido que los datos sean correctos
+    On Error GoTo error
+    Dim codErr As Byte
+    Dim descErr As String
+    Dim focus As Object
+    
+    funValidoDatosGeneral = True
+    'valido que se ingrese nombre de tabla
+    If Trim(txtTablaPrincipal.Text) = Empty Then
+        codErr = 1
+    End If
+    If codErr > 0 Then
+        'se produjo un error
+        Select Case codErr
+            Case 1
+                descErr = "Debe de ingresar nombre de tabla principal"
+                Set focus = txtTablaPrincipal
+        End Select
+        MsgBox descErr, vbExclamation
+        focus.SetFocus
+        funValidoDatosGeneral = False
+        Changed = True  'no permito que se cierre la página de propiedades
+    End If
+Exit Function
+error:
+    mSubControloErroresPropiedades "funValidoDatosGeneral"
+End Function
+
+Private Function funGraboPropiedadCampos() As String
+    'Cargo la propiedad campos con los valores contenidos en la grilla
+    On Error GoTo error
+    Dim i As Integer
+    Dim camposProcesados As String
+    'recorro grilla
+    i = 2   'comienzo por la primer fila que contenga datos
+    Do While i < PropertyPage.gCampos.Rows
+            camposProcesados = camposProcesados & gCampos.TextMatrix(i, 0) & ";" & _
+                                                funObtengoValorCboTablas(i) & ";" & _
+                                                gCampos.TextMatrix(i, 2) & ";" & _
+                                                gCampos.TextMatrix(i, 3) & "@"
+        i = i + 1
+    Loop
+    funGraboPropiedadCampos = camposProcesados
+Exit Function
+error:
+    mSubControloErroresPropiedades "funGraboPropiedadCampos"
+End Function
+
+Private Function funObtengoValorCboTablas(i As Integer) As String
+    'Determino a que tabla pertenece el nuevo campo ingresado
+    'si el combo indica (tabla principal) entonces tomo el nombre de la tabla principal
+    'contenida en el cuadro de texto txtTablaPrincipal
+    On Error GoTo error
+    'verifico el valor del elemento seleccionado
+    If gCampos.TextMatrix(i, 1) = "(tabla principal)" Then
+        'el elemento seleccionado indica que hay que tomar el valor de la tabla principal
+        funObtengoValorCboTablas = txtTablaPrincipal.Text
+    Else
+        'tomo el valor desde el combo
+        funObtengoValorCboTablas = gCampos.TextMatrix(i, 1)
+    End If
+Exit Function
+error:
+    mSubControloErroresPropiedades "funObtengoValorCboTablas"
+End Function
+
+Private Function funGraboPropiedadTablasRelacionadas() As String
+    'Cargo la propiedad TablasRelacionadas con los valores contenidos en la grilla
+    On Error GoTo error
+    Dim camposProcesados As String
+    Dim i As Integer
+    'recorro grilla
+    i = 2   'comienzo por la primer fila que contenga datos
+    Do While i < PropertyPage.gTablas.Rows
+            camposProcesados = camposProcesados & gTablas.TextMatrix(i, 0) & ";" & _
+                                                gTablas.TextMatrix(i, 1) & ";" & _
+                                                gTablas.TextMatrix(i, 2) & "@"
+        i = i + 1
+    Loop
+    funGraboPropiedadTablasRelacionadas = camposProcesados
+Exit Function
+error:
+    mSubControloErroresPropiedades "funGraboPropiedadTablasRelacionadas"
+End Function
+
+Private Sub botAgregarVal_Click()
+    'Agrego un nuevo campo a la grilla de campos
+    On Error GoTo error
+    'valido que los datos del nuevo campo sean correctos
+    If funValidoDatosNuevoCampo Then
+        'agrego línea a la grilla
+        gCampos.AddItem Val(txtIndCampo.Text) & Chr(9) & _
+                        cboTablas.Text & Chr(9) & _
+                        txtDescCampo.Text & Chr(9) & _
+                        funObtengoAncho(Val(txtAnchoPre.Text))
+        'La descripción de los campos no pueden contener espacios en blanco
+        'por ese motivo utilizo la función trim
+        
+        'limpio los controles de la página (solo los de campo) para un nuevo ingreso
+        subLimpioPagina
+        'indico que se produjo un cambio en las propiedades
+        Changed = True
+        'le doy el focus al control para continuar con el ingreso
+        PropertyPage.txtDescCampo.SetFocus
+    End If
+Exit Sub
+error:
+    mSubControloErroresPropiedades "botAgregarVal_Click"
+End Sub
+
+Private Function funObtengoAncho(ancho As Integer)
+    'Determino el ancho de la columna creada
+    If ancho > 0 Then
+        'el ancho de la columna lo estableció el programador
+        funObtengoAncho = ancho
+    Else
+        'el ancho de la columna se establece según la constante
+        funObtengoAncho = cAnchoPredeterminado
+    End If
+End Function
+
+Private Sub botEliminarVal_Click()
+    'Elimino una fila de la grilla de campos
+    On Error GoTo error
+    mSubEliminoFilaGrilla PropertyPage.gCampos
+    'indico que se produjo un cambio en las propiedades
+    Changed = True
+Exit Sub
+error:
+    mSubControloErroresPropiedades "botEliminarVal_Click"
+End Sub
+
+Private Function funValidoDatosNuevoCampo() As Boolean
+    'Valido si los datos correspondientes al nuevo campo son correctos
+    On Error GoTo error
+    Dim codErr As Byte
+    Dim descErr As String
+    Dim focus As Object
+    
+    funValidoDatosNuevoCampo = True
+    codErr = 0
+    'valido que se ingrese descripción
+    If Trim(PropertyPage.txtDescCampo.Text) = Empty Then
+        codErr = 1
+    Else
+        'valido que se ingrese índice del campos
+        If Trim(PropertyPage.txtIndCampo.Text) = Empty Then
+            codErr = 2
+        Else
+            'valido que se ingrese tabla del campo
+            If PropertyPage.cboTablas.ListCount < 1 Or _
+            PropertyPage.cboTablas.ListIndex < 0 Then
+                codErr = 3
+            End If
+        End If
+    End If
+    'verifico si se produjo un error
+    If codErr > 0 Then
+        'muestro mensaje de error y asigno focus al control correspondiente
+        Select Case codErr
+            Case 1
+                descErr = "Debe de ingresar descripción del campo."
+                Set focus = txtDescCampo
+            Case 2
+                descErr = "Debe de ingresar índice del campo."
+                Set focus = txtIndCampo
+            Case 3
+                descErr = "Debe de seleccionar tabla a la cual pertenece el campo."
+                Set focus = cboTablas
+        End Select
+        MsgBox descErr, vbExclamation
+        'le doy el focus al control correspondiente
+        focus.SetFocus
+        funValidoDatosNuevoCampo = False
+    End If
+Exit Function
+error:
+    mSubControloErroresPropiedades "funValidoDatosNuevoCampo"
+End Function
+
+Private Sub subLimpioPagina()
+    'Limpio los control del tab campos
+    PropertyPage.txtAnchoPre.Text = Empty
+    PropertyPage.txtDescCampo.Text = Empty
+    PropertyPage.txtIndCampo.Text = Empty
+    If PropertyPage.cboTablas.ListCount > 0 Then
+        PropertyPage.cboTablas.ListIndex = 0
+    End If
+End Sub
+
+Private Sub subLimpioPaginaTablas()
+    'Limpio los controles del tab tablas
+    PropertyPage.txtIndCampoClaveTablaRel.Text = Empty
+    PropertyPage.txtIndCampoTablaPrincipal.Text = Empty
+    PropertyPage.txtTablaRelacionada.Text = Empty
+End Sub
+
+Private Sub botAgregarTabla_Click()
+    'Agrego una nueva tabla a la grilla
+    On Error GoTo error
+    If funValidoDatosTablas Then
+        'agrego línea a la grilla de tablas
+        PropertyPage.gTablas.AddItem PropertyPage.txtIndCampoTablaPrincipal & Chr(9) & _
+                                    PropertyPage.txtTablaRelacionada & Chr(9) & _
+                                    PropertyPage.txtIndCampoClaveTablaRel & Chr(9)
+
+        subLimpioPaginaTablas
+        Changed = True
+        'le doy el focus al control para continuar con el ingreso
+        PropertyPage.txtTablaRelacionada.SetFocus
+    End If
+Exit Sub
+error:
+    mSubControloErroresPropiedades "botAgregarTabla_Click"
+End Sub
+
+Private Function funValidoDatosTablas() As Boolean
+    'Verifico que los datos de la nueva tabla relacionada sean los correctos
+    On Error GoTo error
+    Dim descErr As String
+    Dim codErr As Byte
+    Dim focus As Object
+    funValidoDatosTablas = True
+    codErr = 0
+    'valido que se ingrese tabla
+    If Trim(PropertyPage.txtTablaRelacionada) = Empty Then
+        codErr = 1
+    Else
+        'valido que se ingrese campo clave de la tabla relacionada
+        If Trim(PropertyPage.txtIndCampoClaveTablaRel.Text) = Empty Then
+            codErr = 2
+        Else
+            'valido que se ingrese índice del campo clave de la tabla principal
+            If Trim(PropertyPage.txtIndCampoTablaPrincipal.Text) = Empty Then
+                codErr = 3
+            End If
+        End If
+    End If
+    If codErr > 0 Then
+        'si se produjo un error muestro mensaje y le doy el focus al control
+        'correspondiente
+        Select Case codErr
+            Case 1
+                descErr = "Debe de ingresar nombre de la tabla."
+                Set focus = txtTablaRelacionada
+            Case 2
+                descErr = "Debe de ingresar índice del campo clave de la tabla relacionada."
+                Set focus = txtIndCampoClaveTablaRel
+            Case 3
+                descErr = "Debe de ingresar índice del campo clave de la tabla principal"
+                Set focus = txtIndCampoTablaPrincipal
+        End Select
+        funValidoDatosTablas = False
+        MsgBox descErr, vbExclamation
+        focus.SetFocus
+    End If
+Exit Function
+error:
+    mSubControloErroresPropiedades "funValidoDatosTablas"
+End Function
+
+Private Sub botEliminarTabla_Click()
+    'Elimino una tabla de la grilla
+    On Error GoTo error
+    mSubEliminoFilaGrilla PropertyPage.gTablas
+    'indico que se produjo un cambio en las propiedades
+    Changed = True
+Exit Sub
+error:
+    mSubControloErroresPropiedades "botEliminarTabla_Click"
+End Sub
+
+Private Sub botSubir_Click()
+    'Subo una posición la línea seleccionada en la grilla de campos
+    On Error GoTo error
+    mSubSubirLinea gCampos
+    Changed = True
+Exit Sub
+error:
+    mSubControloErroresPropiedades "botSubir_Click"
+End Sub
+
+Private Sub botBajar_Click()
+    'Bajo una posición la línea seleccionada en la grilla de campos
+    On Error GoTo error
+    mSubBajarLinea gCampos
+    Changed = True
+Exit Sub
+error:
+    mSubControloErroresPropiedades "botBajar_Click"
+End Sub
+
+Private Sub txtDescCampo_KeyPress(KeyAscii As Integer)
+    'Controlo que no se ingresen ciertos caracteres que provocan que la instrucción sql cancele
+    Select Case KeyAscii
+        Case 65 To 90   'permito solo carcteres minúscula
+        Case 97 To 122  'permito solo caracteres mayúsculas
+        Case 225        'á
+        Case 233        'é
+        Case 243        'ó
+        Case 237        'í
+        Case 250        'ú
+        Case 8          'backdelete
+        Case 48 To 57   'permito ingreso de dígitos
+        Case Else
+            KeyAscii = 0
+    End Select
+End Sub
+
+Private Sub txtIndCampoTablaPrincipal_KeyPress(KeyAscii As Integer)
+    'Valido ingreso de solo números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+Private Sub txtIndCampo_KeyPress(KeyAscii As Integer)
+    'Valido ingreso de solo números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+Private Sub txtAnchoPre_KeyPress(KeyAscii As Integer)
+    'Valido ingreso de solo números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+Private Sub txtIndCampoClaveTablaRel_KeyPress(KeyAscii As Integer)
+    'Valido ingreso de solo números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+Private Sub txtIndCampoInicial_KeyPress(KeyAscii As Integer)
+    'Valido ingreso de solo números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+Private Sub txtIndCampoRetorno_KeyPress(KeyAscii As Integer)
+    'Valido ingreso de solo números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+Private Sub txtTeclaSeleccion_KeyPress(KeyAscii As Integer)
+    'Valido ingreso de solo números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+Private Sub botDirSel_Click()
+    'Muestro cuadro de diálogo predeterminado de windows para seleccionar
+    'base de datos
+        ' Establece Cancel a True.
+    CommonDialog1.CancelError = True
+    On Error GoTo ErrHandler
+    ' Especificación de filtros
+    CommonDialog1.Filter = "Todos los archivos (*.*)|*.*|Base de datos" & _
+    "(*.mdb)|*.mdb"
+    ' Especificar el filtro predeterminado
+    CommonDialog1.FilterIndex = 2
+    ' Cargo tipos de archivos
+    CommonDialog1.DefaultExt = "*.mdb"
+    ' Presenta el cuadro de diálogo de ShowOpen
+    CommonDialog1.ShowOpen
+    ' Establece la ruta y el nombre del archivo seleccionado al cuadro
+    ' de texto.
+    PropertyPage.txtCaminoBaseDeDatos.Text = CommonDialog1.filename
+ErrHandler:
+    ' El usuario hizo clic en el botón Cancelar.
+    Exit Sub
+End Sub
+
+Private Sub txtCaminoBaseDeDatos_Change()
+    Changed = True
+End Sub
+
+Private Sub txtTabla_Change()
+    Changed = True
+End Sub
+
+Private Sub txtIndCampoInicial_Change()
+    Changed = True
+End Sub
+
+Private Sub txtIndCampoRetorno_Change()
+    Changed = True
+End Sub
+
+Private Sub txtTeclaSeleccion_Change()
+    Changed = True
+End Sub
+
+Private Sub txtTablaPrincipal_Change()
+    Changed = True
+End Sub
+
+Private Sub SSTab1_Click(PreviousTab As Integer)
+    'Cuando cambio al tabs de campos cargo el combo de tablas con las tablas
+    'que se cragaron en la grilla de tablas (tablas relacionadas) más la tabla principal
+    On Error GoTo error
+    Dim i As Integer
+    
+    'limpio combo de tablas
+    cboTablas.Clear
+    'cargo tabla principal
+    cboTablas.AddItem "(tabla principal)"
+    'recorro grilla de tablas y cargo tablas relacionadas
+    i = 2 'comienzo en la primer fila de la grilla que contiene datos
+    Do While i < gTablas.Rows
+        gTablas.Row = i
+        cboTablas.AddItem gTablas.TextMatrix(i, 1)
+        i = i + 1
+    Loop
+    PropertyPage.Refresh
+Exit Sub
+error:
+    mSubControloErroresPropiedades "SSTab1_Click"
+End Sub
+
+Private Sub txtTablaPrincipal_KeyPress(KeyAscii As Integer)
+    'Controlo que no se ingresen ciertos caracteres en el nombre
+    'de la tabla
+    subControloIngresoCaracteres KeyAscii
+End Sub
+
+Private Sub txtTablaRelacionada_KeyPress(KeyAscii As Integer)
+    'Controlo que no se ingresen ciertos caracteres en el nombre
+    'de la tabla
+    subControloIngresoCaracteres KeyAscii
+End Sub
+
+Private Sub subControloIngresoCaracteres(ByRef caracter As Integer)
+    'No permito el ingreso de ciertos caracteres en los nombres de la tabla
+    On Error GoTo error
+    Select Case caracter
+        Case 40 '(
+            caracter = 0
+    End Select
+Exit Sub
+error:
+    mSubControloErroresPropiedades "subControloIngresoCaracteres"
+End Sub
+

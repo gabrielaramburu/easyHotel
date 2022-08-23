@@ -1,0 +1,22 @@
+1)	cuando se le da click en siguiente
+ cambiar el titulo del tab a ¿porque invertir en EasyHotel?
+
+2) Estudiar si se podría resaltar (si queda lindo) la última parte del palle con
+algún fondo o tipo de letra especial.Usted ya conoce la importancia de tener ...
+
+3) Cambiar Inicio(principal) por EasyHotel.
+
+5) Diferenciar los colores de características y funciones.
+
+6) Estudiar si queda bien poner las opciones características y funciones
+como un submenu de conozca EasyHotel.La otra opción puede ser:
+después que se da click en Conozca.. mostrar por defecto las funciones.
+
+7) sacar ocx. (dejar para después)
+
+8) Tal vez sea más importante funciones que características
+(el orden de aparición)
+
+9) No me queda claro para que mostrar la lista de productos en asistencia 
+técnica. Me parece que queda bien, con mostrar las preguntas más frecuentes o 
+el formulario de ingreso de consultas.

@@ -1,0 +1,102 @@
+ESTADO DE CUENTA Julio 2002
+----------------
+Se podria implementar tanto en estado de cuenta por pax como por empresa
+un resumen GENERICO o sea darle la opcion al usuario
+que pueda ver todos los estados de cuenta ordenados alfabeticamente.
+
+BARRA DE ESTADO	Julio 2002
+---------------
+Implementar mejoras en la barra de estado.
+	- mostrar tipo de dato a ingresar: 	Alfanumérico
+						Numerico
+						Fecha
+	- mostrar si es obligatorio ingresar un datos.
+
+
+RECIVOS	Julio 2002
+-------
+Es necesario implementar,que el cliente a quien se le realiza el 
+recivo sea también una empresa. Recivos manuales y automáticos.
+
+
+FACTURACIÓN	Julio 2002
+-----------
+De la misma manera que con los recivos, es necesario poder realizar 
+facturas a clientes de tipo empresa.
+
+MENU		Julio 2002
+----
+Sería interesante indicar a que opción pertenece la lista de opcines
+desplegables en el menú general.
+
+FUENTES	Julio 2002
+-------
+Implementar cambio de fuentes de etiquetas
+
+AYUDAS	Julio 2002
+------
+Sería muy interesante poder implementar, que cuando se llama a el 
+formulrio de ayuda, solo se carge la primera vez, mejorando
+el tiempo de visulización del mismo.
+
+CONSULTA DE HABITACIONES	Julio 2002
+------------------------
+
+Debo de mostrar período de ocupación de la habitación.
+
+CREACION DE ARCHIVO DE RECURSOS Agosto 2002
+-------------------------------
+Puede ser interesante implementar características en archivo de recursos
+
+LICECNIA.DLL	Agosto 2002
+------------
+	- se puede cambiar el número de id de una aplicación a otra
+	produciendo que una aplicación que no este registrada se ejecute con el
+	id de otra aplicación
+
+	- antes de cumplirse el período de evaluación se puede cambiar el id
+	de una aplicación para que se inicialize nuevamente la misma.
+
+TARJETAS DE CREDITO Agosto 2002
+-------------------
+Incluir mantenimiento de tarjetas de crédito
+
+CODIFICAR BASE DE DATOS	Agosto 2002
+-----------------------
+Codificar las claves de los usuarios de la aplicación antes
+de guardarla en la base de datos, ya que las mismas se pueden
+verificar con un procesador de texto.
+
+CONFIGURAR VALOR DEL IVA	Agosto 2002
+------------------------
+Poder cambiar el valor del iva, y determinar que tipo de iva 
+lleva el alojamiento.
+
+TRABAJAR CON EL REGISTRO DE WINDOWS	Agosto 2002
+-----------------------------------
+Estudiar la posibilidad de almacenar datos que actualmente
+se almacenan en archivos de texto, almacenarlos en el registro
+de windows.
+
+INTERCEPTAR ERRORES	Agosto 2002
+-------------------
+Implementar en el sistema que se intercepten los posibles códigos
+de error que genera la aplicación.
+
+COMBOS QUE SE CARGAN DESDE ARCHIVOS	Agosto 2002
+------------------------------------
+Es posible que si los combos que se cargan con información de archivos
+de los cuales el usuario puede realizar el mantenimiento, se produsca
+un error en los formulario que los utilizan , si los archivos están vacíos
+combo nacionalidades y paises.
+
+CIERRE DIARIO	Agosto 2002
+-------------
+
+Cuando se realiza un cierre diario y no hay registros en las tablas
+no se guarda nada en el archivo CIERRE_DIARIO. Estudiar!!
+
+RENDIMIENTO		Setiembre 2002
+------------
+Estudiar los aspectos del rendimiento de la aplicación que bienen en el
+archivo PGCH15.doc

@@ -1,0 +1,6 @@
+MantBD = 66, 66, 497, 386, Z, 22, 22, 319, 342, 
+MantBdGeneral = 110, 110, 398, 430, C, 88, 88, 376, 408, C
+MantBdIntegridadRef = 44, 44, 332, 364, C, 132, 132, 420, 452, C
+modPrincipal = 154, 154, 442, 474, C
+MantBdApariencia = 88, 88, 343, 408, C, 0, 0, 398, 320, C
+frmBorrarRegistro = 88, 88, 587, 408, C, 88, 88, 448, 408, C

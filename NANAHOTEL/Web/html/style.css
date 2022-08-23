@@ -1,0 +1,36 @@
+A:link {
+	FONT-WEIGHT: normal; COLOR: #0066cc; TEXT-DECORATION: underline
+}
+A:visited {
+	FONT-WEIGHT: normal; COLOR: #0099ff; TEXT-DECORATION: underline
+}
+A:active {
+	FONT-WEIGHT: normal; COLOR: #ff6600; TEXT-DECORATION: underline
+}
+A:hover {
+	FONT-WEIGHT: normal; COLOR: #ff6600; TEXT-DECORATION: underline
+}
+.L0title {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; LINE-HEIGHT: 20px
+}
+.L2title {
+	FONT-SIZE: 16px; LINE-HEIGHT: 18px
+}
+.default {
+	FONT-SIZE: 12px; LINE-HEIGHT: 18px
+}
+.defaultBold {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 18px
+}
+.defaultTight {
+	FONT-SIZE: 12px; LINE-HEIGHT: 15px
+}
+.defaultTightBold {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 15px
+}
+.small {
+	FONT-SIZE: 10px; LINE-HEIGHT: 12px
+}
+.caption {
+	FONT-SIZE: 9px; LINE-HEIGHT: 11px
+}

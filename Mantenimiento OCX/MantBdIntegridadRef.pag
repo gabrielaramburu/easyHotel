@@ -1,0 +1,371 @@
+VERSION 5.00
+Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
+Begin VB.PropertyPage MantBdIntegridadRef 
+   Caption         =   "Control de integridad"
+   ClientHeight    =   6240
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   6960
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   6240
+   ScaleWidth      =   6960
+   Begin VB.Frame Frame1 
+      Caption         =   "Control de integridad referencial"
+      Height          =   6015
+      Left            =   120
+      TabIndex        =   9
+      Top             =   120
+      Width           =   6735
+      Begin VB.TextBox txtMensajeErr 
+         Height          =   285
+         Left            =   240
+         MaxLength       =   255
+         TabIndex        =   3
+         Top             =   2520
+         Width           =   4455
+      End
+      Begin VB.TextBox txtDescTabla 
+         Height          =   285
+         Left            =   240
+         MaxLength       =   255
+         TabIndex        =   1
+         Top             =   1320
+         Width           =   4455
+      End
+      Begin VB.CommandButton botSubir 
+         Height          =   200
+         Left            =   5400
+         Picture         =   "MantBdIntegridadRef.pgx":0000
+         Style           =   1  'Graphical
+         TabIndex        =   6
+         Top             =   4440
+         Width           =   735
+      End
+      Begin VB.CommandButton botBajar 
+         Height          =   200
+         Left            =   5400
+         Picture         =   "MantBdIntegridadRef.pgx":01AA
+         Style           =   1  'Graphical
+         TabIndex        =   7
+         Top             =   4680
+         Width           =   735
+      End
+      Begin VB.CommandButton botEliminarVal 
+         Caption         =   "Eliminar"
+         Height          =   375
+         Left            =   5400
+         TabIndex        =   5
+         Top             =   3720
+         Width           =   735
+      End
+      Begin VB.CommandButton botAgregarVal 
+         Caption         =   "Agregar"
+         Height          =   375
+         Left            =   5400
+         TabIndex        =   4
+         Top             =   3240
+         Width           =   735
+      End
+      Begin MSFlexGridLib.MSFlexGrid gIntegridad 
+         Height          =   1695
+         Left            =   240
+         TabIndex        =   8
+         Top             =   3240
+         Width           =   5055
+         _ExtentX        =   8916
+         _ExtentY        =   2990
+         _Version        =   393216
+         FixedCols       =   0
+         AllowUserResizing=   1
+      End
+      Begin VB.TextBox txtIndiceCampo 
+         Height          =   285
+         Left            =   240
+         MaxLength       =   3
+         TabIndex        =   2
+         Top             =   1920
+         Width           =   855
+      End
+      Begin VB.TextBox txtTablaValidar 
+         Height          =   285
+         Left            =   240
+         MaxLength       =   100
+         TabIndex        =   0
+         Top             =   720
+         Width           =   2295
+      End
+      Begin VB.Label Label5 
+         AutoSize        =   -1  'True
+         Caption         =   "Mensaje de error"
+         Height          =   195
+         Left            =   240
+         TabIndex        =   14
+         Top             =   2280
+         Width           =   1185
+      End
+      Begin VB.Label Label4 
+         AutoSize        =   -1  'True
+         Caption         =   "Descripción de la tabla"
+         Height          =   195
+         Left            =   240
+         TabIndex        =   13
+         Top             =   1080
+         Width           =   1620
+      End
+      Begin VB.Label Label3 
+         AutoSize        =   -1  'True
+         Caption         =   "Validaciones a realizar"
+         Height          =   195
+         Left            =   240
+         TabIndex        =   12
+         Top             =   3000
+         Width           =   1575
+      End
+      Begin VB.Label Label2 
+         AutoSize        =   -1  'True
+         Caption         =   "Indice campo a validar"
+         Height          =   195
+         Left            =   240
+         TabIndex        =   11
+         Top             =   1680
+         Width           =   1605
+      End
+      Begin VB.Label Label1 
+         AutoSize        =   -1  'True
+         Caption         =   "Tabla que hay que validar"
+         Height          =   195
+         Left            =   240
+         TabIndex        =   10
+         Top             =   480
+         Width           =   1845
+      End
+   End
+End
+Attribute VB_Name = "MantBdIntegridadRef"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+    
+Private Sub PropertyPage_ApplyChanges()
+    'Se ejecuta cuando el usuario hace click en el boton aceptar o aplicar
+    'en la página de propiedades
+    On Error GoTo error
+    
+    SelectedControls(0).integridad = funObtengoPropiedadIntegridad
+    Exit Sub
+error:
+    mSubControloErroresPropiedades "PropertyPage_ApplyChanges MantBdIntegridadRef"
+End Sub
+
+Private Function funObtengoPropiedadIntegridad() As String
+    'Recorro la grilla de propiedades y creo con sus datos un string
+    'con toda esa información la cual se asignará a la propiedad integridad
+    On Error GoTo error
+    Dim i As Integer
+    Dim controlesProcesados As String
+    'recorro grilla
+    i = 2   'comienzo por la primer fila que contenga datos
+    Do While i < PropertyPage.gIntegridad.Rows
+            controlesProcesados = controlesProcesados & funProcesoFila(i) & "@"
+        i = i + 1
+    Loop
+    funObtengoPropiedadIntegridad = controlesProcesados
+    Exit Function
+error:
+    mSubControloErroresPropiedades "FunObtengoPropiedad"
+End Function
+
+Private Function funProcesoFila(fila As Integer) As String
+    'Con cada línea de la grilla obengo un string
+    On Error GoTo error
+    Dim campo As String
+    Dim i As Byte
+    PropertyPage.gIntegridad.Row = fila    'trabajo con la fila indicada
+    
+    'recorro todos los campos de la grilla en la fila correspondinete
+    For i = 0 To PropertyPage.gIntegridad.Cols - 1
+        PropertyPage.gIntegridad.Col = i
+        campo = campo & PropertyPage.gIntegridad.Text & ";"
+    Next
+    'elimino ultima coma
+    campo = Mid(campo, 1, Len(campo) - 1)
+    funProcesoFila = campo
+    Exit Function
+error:
+    mSubControloErroresPropiedades "funProcesoFila"
+End Function
+
+Private Sub PropertyPage_SelectionChanged()
+    'Cargo propiedades del control a la página
+    On Error GoTo error
+    Dim integridad As String
+    
+    'inicializo grilla
+    PropertyPage.gIntegridad.Clear
+    mSubLimpioGrilla PropertyPage.gIntegridad, True
+    'Cero cabezal de grilla
+    PropertyPage.gIntegridad.FormatString = "Nombre tabla  | " & _
+                                        "Ind. campo | " & _
+                                        "Descripción tabla               | " & _
+                                        "Mensaje de error                            "
+                                        
+    'solo ejecuto si selecciono un control a la vez
+    If SelectedControls.Count = 1 Then
+        integridad = SelectedControls(0).integridad
+        subMuestroPropiedadIntegridad integridad
+    End If
+    PropertyPage.Refresh
+    Exit Sub
+error:
+    mSubControloErroresPropiedades "PropertyPage_SelectionChanged MantBdIntegridadRef"
+End Sub
+
+Private Sub subMuestroPropiedadIntegridad(integridad As String)
+    'Recorro el string y muestro información de campos en grilla
+    On Error GoTo error
+    Dim largo As String
+    Dim cadaControl As String
+    Dim caracter As String
+    
+    Dim i As Integer
+    
+    largo = Len(integridad)
+    i = 1
+    Do While i <= largo
+        caracter = Mid(integridad, i, 1)    'obtengo todos y cada uno de los caracteres
+                                            'que componen la propiedad integridad
+        If caracter = ";" Then  '; indica nuevo campo
+            'cada campo se asigna a una columna diferente en la grilla de integridad
+            caracter = Chr(9)   'chr(9) indica nueva columna
+        End If
+        If caracter = "@" Then  '@ indica que finaliza el control de integridad
+            'creo una fila en la grilla de integridad con el control leido
+            PropertyPage.gIntegridad.AddItem ""
+            mSubRangoCeldas PropertyPage.gIntegridad, 0, _
+                            PropertyPage.gIntegridad.Cols - 1, _
+                            PropertyPage.gIntegridad.Rows - 1, _
+                            PropertyPage.gIntegridad.Rows - 1
+            PropertyPage.gIntegridad.Clip = cadaControl
+            cadaControl = ""  'inicializo para cargar información de un nuevo control
+        Else
+            cadaControl = cadaControl & caracter
+        End If
+        i = i + 1
+    Loop
+    Exit Sub
+error:
+    mSubControloErroresPropiedades "subMuestroPropiedadIntegridad"
+End Sub
+
+Private Sub botAgregarVal_Click()
+    'Muestro nuevo control en grilla
+    On Error GoTo error
+    If funValidoDatos Then
+        Changed = True  'indico que se ha cambiado una propiedad
+        'creo nueva línea en la grilla
+        PropertyPage.gIntegridad.AddItem funCreoLineaParaGrilla
+        'inicializo todos los controles para ingresar un nuevo campo
+        subLimpioControlesFormulario
+    End If
+    Exit Sub
+error:
+    mSubControloErroresPropiedades "botAgregarVal_Click"
+End Sub
+
+Private Function funCreoLineaParaGrilla() As String
+    'Recorro todos los valores de las propiedades y creo una cadena con ellos.
+    'la cual sera será almacenada en la grilla
+    On Error GoTo error
+    funCreoLineaParaGrilla = _
+        PropertyPage.txtTablaValidar & Chr(9) & _
+        PropertyPage.txtIndiceCampo & Chr(9) & _
+        PropertyPage.txtDescTabla & Chr(9) & _
+        PropertyPage.txtMensajeErr
+Exit Function
+error:
+    mSubControloErroresPropiedades "funCreoLineaParaGrilla"
+End Function
+
+Private Function funValidoDatos() As Boolean
+    'Valido que los datos que en su conjunto conformar el control
+    'de propiedad sean correctos
+    On Error GoTo error
+    Dim nroErr As Byte
+    Dim descErr As String
+    Dim focus As Object
+    
+    funValidoDatos = True
+    
+    nroErr = 0  'por defecto asumo que no hay errores
+    'valido que se halla ingresado nombre de tabla
+    If Trim(txtTablaValidar.Text) = Empty Then
+        nroErr = 1
+        Set focus = PropertyPage.txtTablaValidar
+    Else
+        'valido que se halla ingresado indice de tabla
+        If Trim(txtIndiceCampo.Text) = Empty Then
+            nroErr = 2
+            Set focus = PropertyPage.txtIndiceCampo
+        End If
+    End If
+    'valido si se produjeron errores
+    If nroErr > 0 Then
+        'muestro mensaje de error
+        Select Case nroErr
+            Case 1
+                descErr = "Debe de ingresar el nombre de la tabla"
+            Case 2
+                descErr = "Debe de ingresasr el índice del campo clave"
+        End Select
+        funValidoDatos = False
+        MsgBox descErr, vbExclamation
+        focus.SetFocus          'le doy el focus al control donde se produjo el error
+        Set focus = Nothing     'rompo la referncia al objeto
+    End If
+Exit Function
+error:
+    mSubControloErroresPropiedades "funValidoDatos"
+End Function
+
+Private Sub botEliminarVal_Click()
+    'Elimino un elmento de la grilla
+    On Error GoTo error
+    Changed = True  'indico que se ha cambiado una propiedad
+    
+    'no permito eliminar la primer fila fija, ya que sino cancela
+    If PropertyPage.gIntegridad.Row > 1 Then
+        PropertyPage.gIntegridad.RemoveItem (PropertyPage.gIntegridad.Row)
+    End If
+Exit Sub
+error:
+    mSubControloErroresPropiedades "botEliminarVal_Click"
+End Sub
+
+Private Sub botSubir_Click()
+    'Subo la fila seleccionada una posición
+    mSubSubirLinea gIntegridad
+End Sub
+
+Private Sub botBajar_Click()
+    'Bajo la fila seleccionada una posición
+    mSubBajarLinea gIntegridad
+End Sub
+
+Private Sub txtIndiceCampo_KeyPress(KeyAscii As Integer)
+    'Valido solo el ingreso de números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+Private Sub subLimpioControlesFormulario()
+    'Inicializa los controles del formulario para realizar un nuevo control de integridad
+    On Error GoTo error
+    PropertyPage.txtDescTabla.Text = ""
+    PropertyPage.txtIndiceCampo.Text = ""
+    PropertyPage.txtTablaValidar.Text = ""
+    PropertyPage.txtMensajeErr.Text = ""
+    Exit Sub
+error:
+    mSubControloErroresPropiedades "subLimpioControlFormulario"
+End Sub

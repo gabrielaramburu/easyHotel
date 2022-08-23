@@ -1,0 +1,8 @@
+UsuarioMuestro = 132, 132, 400, 478, 
+IngMuestroUsuario = 0, 0, 361, 268, , 132, 132, 493, 400, 
+IngSinUsuario = 0, 0, 268, 346, C, 132, 132, 418, 478, 
+NoMuestroUsuario = 154, 154, 422, 500, 
+IngContra = 0, 0, 403, 346, , 110, 110, 397, 456, 
+Contraseñas = 132, 132, 544, 478, Z
+Mensaje = 66, 66, 331, 412, 
+msgAccesoDenegado = 110, 110, 375, 456, C, 88, 88, 353, 434, C

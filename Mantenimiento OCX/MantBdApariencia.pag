@@ -1,0 +1,453 @@
+VERSION 5.00
+Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.1#0"; "COMDLG32.OCX"
+Begin VB.PropertyPage MantBdApariencia 
+   Caption         =   "Apariencia"
+   ClientHeight    =   6240
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   6960
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   6240
+   ScaleWidth      =   6960
+   Begin MSComDlg.CommonDialog CommonDialog1 
+      Left            =   360
+      Top             =   5520
+      _ExtentX        =   847
+      _ExtentY        =   847
+      _Version        =   327680
+   End
+   Begin VB.Frame Frame4 
+      Caption         =   "Grilla "
+      Height          =   1095
+      Left            =   120
+      TabIndex        =   28
+      Top             =   4200
+      Width           =   2895
+      Begin VB.CheckBox mskMostrarLineas 
+         Caption         =   "Mostrar líneas divisorias en grilla"
+         Height          =   255
+         Left            =   120
+         TabIndex        =   29
+         Top             =   480
+         Width           =   2655
+      End
+   End
+   Begin VB.Frame Frame3 
+      Caption         =   "Colores"
+      Height          =   3975
+      Left            =   3240
+      TabIndex        =   15
+      Top             =   120
+      Width           =   3615
+      Begin VB.CommandButton botColorCampoIngreso 
+         Height          =   285
+         Left            =   3045
+         Picture         =   "MantBdApariencia.pgx":0000
+         Style           =   1  'Graphical
+         TabIndex        =   30
+         Top             =   2640
+         Width           =   300
+      End
+      Begin VB.CommandButton botColorFondoGrilla 
+         Height          =   285
+         Left            =   3045
+         Picture         =   "MantBdApariencia.pgx":02AA
+         Style           =   1  'Graphical
+         TabIndex        =   25
+         Top             =   1920
+         Width           =   300
+      End
+      Begin VB.CommandButton botColorFondoDatos 
+         Height          =   285
+         Left            =   3045
+         Picture         =   "MantBdApariencia.pgx":0554
+         Style           =   1  'Graphical
+         TabIndex        =   21
+         Top             =   480
+         Width           =   300
+      End
+      Begin VB.CommandButton botColorCaract 
+         Height          =   285
+         Left            =   3045
+         Picture         =   "MantBdApariencia.pgx":07FE
+         Style           =   1  'Graphical
+         TabIndex        =   18
+         Top             =   1200
+         Width           =   300
+      End
+      Begin VB.Label Label16 
+         Caption         =   "Fondo campo seleccionado"
+         Height          =   435
+         Left            =   240
+         TabIndex        =   33
+         Top             =   2520
+         Width           =   1245
+      End
+      Begin VB.Label Label15 
+         AutoSize        =   -1  'True
+         Caption         =   "Color"
+         Height          =   195
+         Left            =   2280
+         TabIndex        =   32
+         Top             =   2400
+         Width           =   360
+      End
+      Begin VB.Label lblVentanaColorFondoCampoIngreso 
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         BorderStyle     =   1  'Fixed Single
+         ForeColor       =   &H80000008&
+         Height          =   285
+         Left            =   2280
+         TabIndex        =   31
+         Top             =   2640
+         Width           =   735
+      End
+      Begin VB.Label lblVentanaColorFondoGrilla 
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         BorderStyle     =   1  'Fixed Single
+         ForeColor       =   &H80000008&
+         Height          =   285
+         Left            =   2280
+         TabIndex        =   27
+         Top             =   1920
+         Width           =   735
+      End
+      Begin VB.Label Label14 
+         AutoSize        =   -1  'True
+         Caption         =   "Color"
+         Height          =   195
+         Left            =   2280
+         TabIndex        =   26
+         Top             =   1680
+         Width           =   360
+      End
+      Begin VB.Label Label13 
+         AutoSize        =   -1  'True
+         Caption         =   "Fondo grilla"
+         Height          =   195
+         Left            =   240
+         TabIndex        =   24
+         Top             =   1920
+         Width           =   810
+      End
+      Begin VB.Label lblVentanaColorFondoDato 
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         BorderStyle     =   1  'Fixed Single
+         ForeColor       =   &H80000008&
+         Height          =   285
+         Left            =   2280
+         TabIndex        =   23
+         Top             =   480
+         Width           =   735
+      End
+      Begin VB.Label Label11 
+         AutoSize        =   -1  'True
+         Caption         =   "Color"
+         Height          =   195
+         Left            =   2280
+         TabIndex        =   22
+         Top             =   240
+         Width           =   360
+      End
+      Begin VB.Label lblVentanaColorCaract 
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         BorderStyle     =   1  'Fixed Single
+         ForeColor       =   &H80000008&
+         Height          =   285
+         Left            =   2280
+         TabIndex        =   20
+         Top             =   1200
+         Width           =   735
+      End
+      Begin VB.Label lblColorMesDis 
+         AutoSize        =   -1  'True
+         Caption         =   "Color"
+         Height          =   195
+         Left            =   2280
+         TabIndex        =   19
+         Top             =   960
+         Width           =   360
+      End
+      Begin VB.Label Label10 
+         Caption         =   "Caracteres en ingreso de datos"
+         Height          =   375
+         Left            =   240
+         TabIndex        =   17
+         Top             =   1080
+         Width           =   1695
+      End
+      Begin VB.Label Label9 
+         Caption         =   "Indicador de focus en control de ingreso de datos"
+         Height          =   495
+         Left            =   240
+         TabIndex        =   16
+         Top             =   480
+         Width           =   2055
+      End
+   End
+   Begin VB.Frame Frame2 
+      Caption         =   "Fuentes"
+      Height          =   2415
+      Left            =   120
+      TabIndex        =   5
+      Top             =   1680
+      Width           =   2895
+      Begin VB.ComboBox cboFuenteDatosIngresar 
+         Height          =   315
+         ItemData        =   "MantBdApariencia.pgx":0AA8
+         Left            =   1800
+         List            =   "MantBdApariencia.pgx":0ABE
+         Style           =   2  'Dropdown List
+         TabIndex        =   11
+         Top             =   1200
+         Width           =   615
+      End
+      Begin VB.ComboBox cboFuenteDatosIngresados 
+         Height          =   315
+         ItemData        =   "MantBdApariencia.pgx":0AD9
+         Left            =   1800
+         List            =   "MantBdApariencia.pgx":0AEF
+         Style           =   2  'Dropdown List
+         TabIndex        =   10
+         Top             =   1920
+         Width           =   615
+      End
+      Begin VB.ComboBox cboFuenteNombreCampo 
+         Height          =   315
+         ItemData        =   "MantBdApariencia.pgx":0B0A
+         Left            =   1800
+         List            =   "MantBdApariencia.pgx":0B20
+         Style           =   2  'Dropdown List
+         TabIndex        =   7
+         Top             =   480
+         Width           =   615
+      End
+      Begin VB.Label Label8 
+         AutoSize        =   -1  'True
+         Caption         =   "Tamaño"
+         Height          =   195
+         Left            =   1800
+         TabIndex        =   14
+         Top             =   960
+         Width           =   585
+      End
+      Begin VB.Label Label7 
+         AutoSize        =   -1  'True
+         Caption         =   "Tamaño"
+         Height          =   195
+         Left            =   1800
+         TabIndex        =   13
+         Top             =   1680
+         Width           =   585
+      End
+      Begin VB.Label Label6 
+         AutoSize        =   -1  'True
+         Caption         =   "Tamaño"
+         Height          =   195
+         Left            =   1800
+         TabIndex        =   12
+         Top             =   240
+         Width           =   585
+      End
+      Begin VB.Label Label5 
+         AutoSize        =   -1  'True
+         Caption         =   "Datos ingresados"
+         Height          =   195
+         Left            =   240
+         TabIndex        =   9
+         Top             =   1980
+         Width           =   1230
+      End
+      Begin VB.Label Label4 
+         AutoSize        =   -1  'True
+         Caption         =   "Datos a ingresar"
+         Height          =   195
+         Left            =   240
+         TabIndex        =   8
+         Top             =   1260
+         Width           =   1155
+      End
+      Begin VB.Label Label3 
+         AutoSize        =   -1  'True
+         Caption         =   "Nombre campo"
+         Height          =   195
+         Left            =   240
+         TabIndex        =   6
+         Top             =   540
+         Width           =   1080
+      End
+   End
+   Begin VB.Frame Frame1 
+      Caption         =   "Tamaño de celdas"
+      Height          =   1455
+      Left            =   120
+      TabIndex        =   0
+      Top             =   120
+      Width           =   2895
+      Begin VB.TextBox txtLargoCelda 
+         Height          =   285
+         Left            =   1800
+         MaxLength       =   4
+         TabIndex        =   4
+         Top             =   840
+         Width           =   615
+      End
+      Begin VB.TextBox txtAnchoCelda 
+         Height          =   285
+         Left            =   1800
+         MaxLength       =   4
+         TabIndex        =   2
+         Top             =   360
+         Width           =   615
+      End
+      Begin VB.Label Label2 
+         AutoSize        =   -1  'True
+         Caption         =   "Largo primer celda"
+         Height          =   195
+         Left            =   240
+         TabIndex        =   3
+         Top             =   840
+         Width           =   1305
+      End
+      Begin VB.Label Label1 
+         AutoSize        =   -1  'True
+         Caption         =   "Ancho celdas"
+         Height          =   195
+         Left            =   240
+         TabIndex        =   1
+         Top             =   360
+         Width           =   975
+      End
+   End
+End
+Attribute VB_Name = "MantBdApariencia"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+
+Private Sub PropertyPage_ApplyChanges()
+    'Ejecuto al presionar el boton aplicar o aceptar
+    On Error GoTo error
+        SelectedControls(0).ColorCaracteresIngreso = lblVentanaColorCaract.BackColor
+        SelectedControls(0).ColorFondoDatos = lblVentanaColorFondoDato.BackColor
+        SelectedControls(0).ColorFondoGrilla = lblVentanaColorFondoGrilla.BackColor
+        SelectedControls(0).ColorFondoCampoIngreso = lblVentanaColorFondoCampoIngreso.BackColor
+        SelectedControls(0).AnchoCeldas = txtAnchoCelda.Text
+        SelectedControls(0).LargoCeldas = txtLargoCelda.Text
+        SelectedControls(0).FuenteNombreCampo = cboFuenteNombreCampo.Text
+        SelectedControls(0).FuenteDatosAIngresar = cboFuenteDatosIngresar.Text
+        SelectedControls(0).FuenteDatosIngresados = cboFuenteDatosIngresados.Text
+        SelectedControls(0).MostrarLineas = mskMostrarLineas.Value
+Exit Sub
+error:
+     mSubControloErroresPropiedades "PropertyPage_ApplyChanges MantBdApariencia"
+End Sub
+
+Private Sub PropertyPage_SelectionChanged()
+    'Cargo propiedades del control a la página
+    On Error GoTo error
+    'solo ejecuto si selecciono un control a la vez
+    If SelectedControls.Count = 1 Then
+        lblVentanaColorCaract.BackColor = SelectedControls(0).ColorCaracteresIngreso
+        lblVentanaColorFondoDato.BackColor = SelectedControls(0).ColorFondoDatos
+        lblVentanaColorFondoGrilla.BackColor = SelectedControls(0).ColorFondoGrilla
+        lblVentanaColorFondoCampoIngreso.BackColor = SelectedControls(0).ColorFondoCampoIngreso
+        txtAnchoCelda.Text = SelectedControls(0).AnchoCeldas
+        txtLargoCelda.Text = SelectedControls(0).LargoCeldas
+        cboFuenteNombreCampo.Text = SelectedControls(0).FuenteNombreCampo
+        cboFuenteDatosIngresar.Text = SelectedControls(0).FuenteDatosAIngresar
+        cboFuenteDatosIngresados.Text = SelectedControls(0).FuenteDatosIngresados
+        mskMostrarLineas.Value = SelectedControls(0).MostrarLineas
+    End If
+Exit Sub
+error:
+     mSubControloErroresPropiedades "PropertyPage_SelctionChanged MantBdApariencia"
+End Sub
+
+Private Sub botColorCaract_Click()
+    'Muestro cuadro de colores y muestro el color seleccionado
+    'en la ventana de colores correspondiente
+    mSubMuestroColorVentana lblVentanaColorCaract
+    Changed = True
+End Sub
+
+Private Sub botColorCampoIngreso_Click()
+    'Muestro cuadro de colores y muestro el color seleccionado
+    'en la ventana de colores correspondiente
+    mSubMuestroColorVentana lblVentanaColorFondoCampoIngreso
+    Changed = True
+End Sub
+
+Private Sub botColorFondoDatos_Click()
+    'Muestro cuadro de colores y muestro el color seleccionado
+    'en la ventana de colores correspondiente
+    mSubMuestroColorVentana lblVentanaColorFondoDato
+    Changed = True
+End Sub
+
+Private Sub botColorFondoGrilla_Click()
+    'Muestro cuadro de colores y muestro el color seleccionado
+    'en la ventana de colores correspondiente
+    mSubMuestroColorVentana lblVentanaColorFondoGrilla
+    Changed = True
+End Sub
+
+Private Sub mSubMuestroColorVentana(ventana As Label)
+    'Llamo al formulario de colores preestablecido por visual
+    ' Establece Cancel a True.
+    CommonDialog1.CancelError = True
+    On Error GoTo ErrHandler
+    ' Establece la propiedad Flags.
+    CommonDialog1.Flags = cdlCCRGBInit
+    ' Presenta el cuadro de diálogo Color.
+    CommonDialog1.ShowColor
+    ' Establece el color de fondo del formulario al
+    ' color seleccionado.
+    ventana.BackColor = CommonDialog1.Color
+    Exit Sub
+
+ErrHandler:
+    ' El usuario hizo clic en el botón Cancelar.
+    Exit Sub
+End Sub
+
+Private Sub txtAnchoCelda_KeyPress(KeyAscii As Integer)
+    'Valído solo el ingreso de números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+Private Sub txtLargoCelda_KeyPress(KeyAscii As Integer)
+    'Valído solo el ingreso de números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+Private Sub txtAnchoCelda_Change()
+    Changed = True
+End Sub
+
+Private Sub txtLargoCelda_Change()
+    Changed = True
+End Sub
+
+Private Sub mskMostrarLineas_Click()
+    Changed = True
+End Sub
+
+Private Sub cboFuenteDatosIngresados_Click()
+    Changed = True
+End Sub
+
+Private Sub cboFuenteDatosIngresar_Click()
+    Changed = True
+End Sub
+
+Private Sub cboFuenteNombreCampo_Click()
+    Changed = True
+End Sub
+

@@ -1,0 +1,18 @@
+Luego de establecer la propiedad indice de un archvio
+es necesario efectuar un seek
+El problema fue detectado en el cuadro de disponibilidad,
+el cual se ejecutaba bien la primera vez y después no 
+mostraba las habitacioes ocupadas.
+Se realizaba una recorrido ordenndo el archvio Checkin por habitación
+y para eso se utilizaba la línea   
+
+  tbCHECKIN.Index = "i_habitacion"
+
+pero esto esta mal ya que no posiciona al puntero en el principio del 
+archvio por lo que la segunda vez que se ejecuta salia por EOF
+Esto se agraba porque estoy trabajando con variables de tablas globales .
+la línea que faltaba es :
+    tbCHECKIN.Seek ">=", 0
+
+Hay que recorrer todo el programa y revisar donde se utilizan la
+sentencia index sin seek

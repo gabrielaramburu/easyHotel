@@ -1,0 +1,10 @@
+AvisoVersionDemo = 22, 22, 532, 342, 
+frmAvisoVersionDemo = 88, 88, 458, 408, , 66, 66, 436, 386, 
+AvisoFinPeriodoDemo = 22, 22, 392, 342, 
+frmAvisoFinPeriodoDemo = 132, 132, 370, 452, C, 44, 44, 414, 364, 
+ControlVersionDemo = 44, 44, 282, 364, Z
+InicializarAplicacion = 66, 66, 436, 386, 
+frmInicializarAplicacion = 132, 132, 642, 452, C, 110, 110, 480, 430, 
+frmAvisoErrores = 22, 22, 260, 342, , 132, 132, 502, 452, 
+AvisoErrores = 44, 44, 282, 364, 
+InformacionApli = 110, 110, 480, 430, 

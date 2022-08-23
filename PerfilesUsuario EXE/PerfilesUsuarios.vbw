@@ -1,0 +1,11 @@
+frmMain = 0, 0, 0, 0, C, 22, 22, 456, 360, C
+BaseDeDatos = 0, 0, 0, 0, C
+VariablesGlobales = 0, 0, 0, 0, C
+frmPermisos = 44, 44, 478, 382, Z, 88, 88, 522, 426, 
+ControlDeLicencia = 0, 0, 0, 0, C
+General = 0, 0, 0, 0, C
+MuestroDerecha = 0, 0, 0, 0, C
+ControlBaseDeDatos = 0, 0, 0, 0, C
+frmAcercaDePerfilesUsuarios = 0, 0, 0, 0, C, 110, 110, 544, 448, C
+frmImpresion = 0, 0, 0, 0, C, 132, 132, 566, 470, C
+Impresion = 0, 0, 0, 0, C

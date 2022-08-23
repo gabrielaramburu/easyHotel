@@ -1,0 +1,83 @@
+27/03/03
+En el cuadro de Información del sistema, la versión del programa se carga
+mediante una cadena fija. Es necesario cambiar esto en las tres aplicaciones,
+para que muestre la propiedad App.mayor.
+
+03/04 
+Estudiar si puedo cambiar el tipo el valor del tipo de
+IVA del alojamiento y como influye esto en el sistema, como así también el 
+cambio de cualquier tipo de iva.
+
+06/04
+SQL, cuando realizo una concatenación y no encuentro coincidencias en una de las
+tablas, no es incluye el registro. Esto es una cagada que ya tenía detectado
+de antes, pero tengo que revisar todos los join que realizo para asegurarme
+que realmente no me estoy quedando con registro afuera.
+La posible solución para esto, es utilizar LEFT JOIN que tambien tiene sus
+limitaciones.
+
+08/04
+Revisar el tema del archivo hab_reservasAux: ver si funciona ulti usuario;
+hay dos campos en el archivo hab_reservas que no se incluyeron en hab_reservas_aux
+
+Población flotante
+12/04/03
+Las personas que ingresan medio día solo aparecen en el listado de población
+flotante el día que se fueron.
+
+Documentar 12/04/03
+Sistema de registración y control de copias ilegales.
+
+Perfiles 17/04/03
+No puedo eliminar un usuario, me dice que no existe.
+Verificar si cuando grabo lo hago eliminando espacios vacíos.
+
+SEt nothing 21/04/03
+verificar que todas las asignaciones set =
+tengan su correspondinte descarga de memoria.
+
+Redondeo 21/04/03
+Ver tema redondeo: cuantos dignos grabo después de la coma, como trabaja la
+función format. 
+
+Fecha impresión 23/04/03
+Revisar si es conveniente imprimir la fecha del sistema o la fecha de la 
+máquina en los reportes donde se imprime fecha.
+
+Cambio pasajero 24/04/03
+El diseño del formulario podría mejorsrse para darle mayor aplitud
+a la ventana de donde se muestran los cambios.
+
+Consulta cuentas 24/04/03
+Se podría arreglar la grilla de gastos alojamientos 
+(ancho de columnas) para que la presentación fuese un poco más
+prolija.
+
+DEcimales 24/04/03
+Estudiar como controlar que no se graben tantos decimales,
+si como propiedad en la base de datos o realizando alguna función
+de redondeo.
+
+Control de base de datos 26/04/03
+Revisar nuevamente los procedimientos para verificar que los mismos funcionem
+Sin datos. Es decir, realizar nuevamente análisis de este aspecto, ya que se 
+realizaron cambios en base de datos (nuevos campos por ejemplo) y se modificaron
+algunos formularios y crearo o se crearán nuevos.
+
+CrystalReport 26/04/03
+cuando le paso un número a crystal report por medio de una fórmula, si el mismo
+contiene parte decimal el:"31.5" crystal report al convertirlo en numérico
+lo transforma (toNumer a  315) por ese motivo tengo que realizar un función
+que cambie el punto por como cundo quiera pasar un número a crystal.
+Revisar todos los informes.
+Ver también que pasa si cambio el valor predeterminado de windows, con 
+respecto a este tema, no valla a ser cosa que para otra confoguración de 
+windows tenga el mismo problema perio inversamente.
+Estudiar esto, por favor.
+
+Facturación 28/04/03
+El tema facturación no me convence. especialmente el pasaje de gastos
+que se realiza al anular un factura o realizar una devolución.
+Creo que esta mál pensado desde un principio por eso es que sigo desconforme.
+Lo que voy a hacer es seguir con el programa a ver que pasa y espero 
+que esto no me tranque más las bolas.

@@ -1,0 +1,23 @@
+23/04/01
+
+
+Listado de Egresos previstos			ok
+
+Listado de Ingresos previstos			ok
+
+Ver disponibilidad				ok
+
+Población flotante
+
+Cambio de fecha de egreso:			ok
+
+Ingreso de pasajero a habitación ocupada:	ok
+
+Contraseñas: alcaguete				ok
+
+Fecha del sistema en parámetros			ok
+
+Cierre diario					ok
+
+Listados estadísticos
+

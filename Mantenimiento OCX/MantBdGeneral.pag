@@ -1,0 +1,1391 @@
+VERSION 5.00
+Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
+Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
+Begin VB.PropertyPage MantBdGeneral 
+   Caption         =   "Campos"
+   ClientHeight    =   6240
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   6960
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   6240
+   ScaleWidth      =   6960
+   Begin VB.Frame Frame2 
+      Caption         =   "Datos tabla"
+      Height          =   2055
+      Left            =   120
+      TabIndex        =   46
+      Top             =   0
+      Width           =   6735
+      Begin VB.TextBox txtTablaOrigenDeDatos 
+         Height          =   285
+         Left            =   120
+         MaxLength       =   200
+         TabIndex        =   0
+         Top             =   480
+         Width           =   2415
+      End
+      Begin TabDlg.SSTab SSTab2 
+         Height          =   1695
+         Left            =   2640
+         TabIndex        =   48
+         Top             =   255
+         Width           =   3975
+         _ExtentX        =   7011
+         _ExtentY        =   2990
+         _Version        =   327680
+         Style           =   1
+         Tabs            =   2
+         Tab             =   1
+         TabHeight       =   520
+         TabCaption(0)   =   "Asignado por usuario"
+         TabPicture(0)   =   "MantBdGeneral.pgx":0000
+         Tab(0).ControlCount=   3
+         Tab(0).ControlEnabled=   0   'False
+         Tab(0).Control(0)=   "Label19"
+         Tab(0).Control(0).Enabled=   0   'False
+         Tab(0).Control(1)=   "chkSugerirProx"
+         Tab(0).Control(1).Enabled=   -1  'True
+         Tab(0).Control(2)=   "txtIndiceCampoClave"
+         Tab(0).Control(2).Enabled=   -1  'True
+         TabCaption(1)   =   "Número correlativo"
+         TabPicture(1)   =   "MantBdGeneral.pgx":001C
+         Tab(1).ControlCount=   6
+         Tab(1).ControlEnabled=   -1  'True
+         Tab(1).Control(0)=   "Label16"
+         Tab(1).Control(0).Enabled=   0   'False
+         Tab(1).Control(1)=   "Label17"
+         Tab(1).Control(1).Enabled=   0   'False
+         Tab(1).Control(2)=   "Label21"
+         Tab(1).Control(2).Enabled=   0   'False
+         Tab(1).Control(3)=   "txtTablaOrigenContador"
+         Tab(1).Control(3).Enabled=   0   'False
+         Tab(1).Control(4)=   "txtIndiceCampoContador"
+         Tab(1).Control(4).Enabled=   0   'False
+         Tab(1).Control(5)=   "txtIndiceCampoClaveContador"
+         Tab(1).Control(5).Enabled=   0   'False
+         Begin VB.TextBox txtIndiceCampoClaveContador 
+            Height          =   285
+            Left            =   2160
+            MaxLength       =   3
+            TabIndex        =   5
+            Top             =   1200
+            Width           =   735
+         End
+         Begin VB.TextBox txtIndiceCampoClave 
+            Height          =   285
+            Left            =   -74760
+            MaxLength       =   3
+            TabIndex        =   1
+            Top             =   720
+            Width           =   735
+         End
+         Begin VB.CheckBox chkSugerirProx 
+            Caption         =   "Sugerir próximo libre"
+            Height          =   255
+            Left            =   -74760
+            TabIndex        =   2
+            Top             =   1200
+            Width           =   1815
+         End
+         Begin VB.TextBox txtIndiceCampoContador 
+            Height          =   285
+            Left            =   240
+            MaxLength       =   3
+            TabIndex        =   4
+            Top             =   1200
+            Width           =   735
+         End
+         Begin VB.TextBox txtTablaOrigenContador 
+            Height          =   285
+            Left            =   240
+            MaxLength       =   200
+            TabIndex        =   3
+            Top             =   600
+            Width           =   2415
+         End
+         Begin VB.Label Label21 
+            AutoSize        =   -1  'True
+            Caption         =   "Indice campo clave"
+            Height          =   195
+            Left            =   2160
+            TabIndex        =   53
+            Top             =   960
+            Width           =   1395
+         End
+         Begin VB.Label Label19 
+            AutoSize        =   -1  'True
+            Caption         =   "Indice campo clave"
+            Height          =   195
+            Left            =   -74760
+            TabIndex        =   52
+            Top             =   480
+            Width           =   1395
+         End
+         Begin VB.Label Label18 
+            AutoSize        =   -1  'True
+            Caption         =   "Indice campo clave"
+            Height          =   195
+            Left            =   -74760
+            TabIndex        =   51
+            Top             =   360
+            Width           =   1395
+         End
+         Begin VB.Label Label17 
+            AutoSize        =   -1  'True
+            Caption         =   "Indice campo contador"
+            Height          =   195
+            Left            =   240
+            TabIndex        =   50
+            Top             =   960
+            Width           =   1635
+         End
+         Begin VB.Label Label16 
+            AutoSize        =   -1  'True
+            Caption         =   "Tabla de origen del contador"
+            Height          =   195
+            Left            =   240
+            TabIndex        =   49
+            Top             =   360
+            Width           =   2040
+         End
+      End
+      Begin VB.Label Label20 
+         AutoSize        =   -1  'True
+         Caption         =   "Tabla de origen de los datos"
+         Height          =   195
+         Left            =   120
+         TabIndex        =   47
+         Top             =   240
+         Width           =   2010
+      End
+   End
+   Begin VB.Frame Frame1 
+      Caption         =   "Datos campos"
+      Height          =   4095
+      Left            =   120
+      TabIndex        =   30
+      Top             =   2040
+      Width           =   6735
+      Begin VB.CommandButton botBajar 
+         Height          =   200
+         Left            =   5880
+         Picture         =   "MantBdGeneral.pgx":0038
+         Style           =   1  'Graphical
+         TabIndex        =   28
+         Top             =   3720
+         Width           =   735
+      End
+      Begin VB.CommandButton botSubir 
+         Height          =   200
+         Left            =   5880
+         Picture         =   "MantBdGeneral.pgx":020A
+         Style           =   1  'Graphical
+         TabIndex        =   27
+         Top             =   3480
+         Width           =   735
+      End
+      Begin VB.CheckBox chkIngresarEnBlanco 
+         Caption         =   "Permitir ingresar en blanco"
+         Height          =   255
+         Left            =   120
+         TabIndex        =   8
+         Top             =   1680
+         Width           =   2175
+      End
+      Begin VB.CommandButton botAgregarVal 
+         Caption         =   "Agregar"
+         Height          =   375
+         Left            =   5880
+         TabIndex        =   25
+         Top             =   2280
+         Width           =   735
+      End
+      Begin VB.CommandButton botEliminarVal 
+         Caption         =   "Eliminar"
+         Height          =   375
+         Left            =   5880
+         TabIndex        =   26
+         Top             =   2760
+         Width           =   735
+      End
+      Begin VB.TextBox txtIndiceCampo 
+         Height          =   285
+         Left            =   120
+         MaxLength       =   3
+         TabIndex        =   7
+         Top             =   1080
+         Width           =   735
+      End
+      Begin MSFlexGridLib.MSFlexGrid gCampos 
+         Height          =   1695
+         Left            =   120
+         TabIndex        =   24
+         Top             =   2280
+         Width           =   5655
+         _ExtentX        =   9975
+         _ExtentY        =   2990
+         _Version        =   393216
+         FixedCols       =   0
+         AllowUserResizing=   1
+      End
+      Begin TabDlg.SSTab SSTab1 
+         Height          =   1695
+         Left            =   2640
+         TabIndex        =   29
+         Top             =   480
+         Width           =   3975
+         _ExtentX        =   7011
+         _ExtentY        =   2990
+         _Version        =   327680
+         Style           =   1
+         Tabs            =   5
+         TabsPerRow      =   5
+         TabHeight       =   520
+         TabCaption(0)   =   "String"
+         TabPicture(0)   =   "MantBdGeneral.pgx":03B4
+         Tab(0).ControlCount=   5
+         Tab(0).ControlEnabled=   -1  'True
+         Tab(0).Control(0)=   "Label3"
+         Tab(0).Control(0).Enabled=   0   'False
+         Tab(0).Control(1)=   "Label4"
+         Tab(0).Control(1).Enabled=   0   'False
+         Tab(0).Control(2)=   "txtMinimoStr"
+         Tab(0).Control(2).Enabled=   0   'False
+         Tab(0).Control(3)=   "txtMaximoStr"
+         Tab(0).Control(3).Enabled=   0   'False
+         Tab(0).Control(4)=   "chkCampoMemoStr"
+         Tab(0).Control(4).Enabled=   0   'False
+         TabCaption(1)   =   "Numérico"
+         TabPicture(1)   =   "MantBdGeneral.pgx":03D0
+         Tab(1).ControlCount=   6
+         Tab(1).ControlEnabled=   0   'False
+         Tab(1).Control(0)=   "chkNegativoNum"
+         Tab(1).Control(0).Enabled=   -1  'True
+         Tab(1).Control(1)=   "chkDecimalNum"
+         Tab(1).Control(1).Enabled=   -1  'True
+         Tab(1).Control(2)=   "txtMaxNum"
+         Tab(1).Control(2).Enabled=   -1  'True
+         Tab(1).Control(3)=   "txtMinNum"
+         Tab(1).Control(3).Enabled=   -1  'True
+         Tab(1).Control(4)=   "Label6"
+         Tab(1).Control(4).Enabled=   0   'False
+         Tab(1).Control(5)=   "Label5"
+         Tab(1).Control(5).Enabled=   0   'False
+         TabCaption(2)   =   "Fecha"
+         TabPicture(2)   =   "MantBdGeneral.pgx":03EC
+         Tab(2).ControlCount=   2
+         Tab(2).ControlEnabled=   0   'False
+         Tab(2).Control(0)=   "Label7"
+         Tab(2).Control(0).Enabled=   0   'False
+         Tab(2).Control(1)=   "cboFechasFecha"
+         Tab(2).Control(1).Enabled=   -1  'True
+         TabCaption(3)   =   "Cbo. fijo"
+         TabPicture(3)   =   "MantBdGeneral.pgx":0408
+         Tab(3).ControlCount=   6
+         Tab(3).ControlEnabled=   0   'False
+         Tab(3).Control(0)=   "Label8"
+         Tab(3).Control(0).Enabled=   0   'False
+         Tab(3).Control(1)=   "Label9"
+         Tab(3).Control(1).Enabled=   0   'False
+         Tab(3).Control(2)=   "txtOpcCboFijo"
+         Tab(3).Control(2).Enabled=   -1  'True
+         Tab(3).Control(3)=   "botAgregarCboFijo"
+         Tab(3).Control(3).Enabled=   -1  'True
+         Tab(3).Control(4)=   "botEliminarCboFijo"
+         Tab(3).Control(4).Enabled=   -1  'True
+         Tab(3).Control(5)=   "cboOpcionesCboFijo"
+         Tab(3).Control(5).Enabled=   -1  'True
+         TabCaption(4)   =   "Cbo. arch."
+         TabPicture(4)   =   "MantBdGeneral.pgx":0424
+         Tab(4).ControlCount=   6
+         Tab(4).ControlEnabled=   0   'False
+         Tab(4).Control(0)=   "Label10"
+         Tab(4).Control(0).Enabled=   0   'False
+         Tab(4).Control(1)=   "Label13"
+         Tab(4).Control(1).Enabled=   0   'False
+         Tab(4).Control(2)=   "Label14"
+         Tab(4).Control(2).Enabled=   0   'False
+         Tab(4).Control(3)=   "txtTablaOrigenCboArch"
+         Tab(4).Control(3).Enabled=   -1  'True
+         Tab(4).Control(4)=   "txtIndiceTablaOpciones"
+         Tab(4).Control(4).Enabled=   -1  'True
+         Tab(4).Control(5)=   "txtIndiceItemDatacboArch"
+         Tab(4).Control(5).Enabled=   -1  'True
+         Begin VB.TextBox txtIndiceItemDatacboArch 
+            Height          =   285
+            Left            =   -73080
+            MaxLength       =   3
+            TabIndex        =   23
+            Top             =   1200
+            Width           =   735
+         End
+         Begin VB.TextBox txtIndiceTablaOpciones 
+            Height          =   285
+            Left            =   -74880
+            MaxLength       =   3
+            TabIndex        =   22
+            Top             =   1200
+            Width           =   735
+         End
+         Begin VB.TextBox txtTablaOrigenCboArch 
+            Height          =   285
+            Left            =   -74880
+            MaxLength       =   200
+            TabIndex        =   21
+            Top             =   600
+            Width           =   2415
+         End
+         Begin VB.ComboBox cboOpcionesCboFijo 
+            Height          =   315
+            Left            =   -74880
+            Style           =   2  'Dropdown List
+            TabIndex        =   18
+            Top             =   1200
+            Width           =   2655
+         End
+         Begin VB.CommandButton botEliminarCboFijo 
+            Caption         =   "Eliminar"
+            Height          =   375
+            Left            =   -72000
+            TabIndex        =   20
+            Top             =   1200
+            Width           =   855
+         End
+         Begin VB.CommandButton botAgregarCboFijo 
+            Caption         =   "Agregar"
+            Height          =   375
+            Left            =   -72000
+            TabIndex        =   19
+            Top             =   720
+            Width           =   855
+         End
+         Begin VB.CheckBox chkCampoMemoStr 
+            Caption         =   "Campo Memo"
+            Height          =   255
+            Left            =   1440
+            TabIndex        =   11
+            Top             =   600
+            Width           =   1335
+         End
+         Begin VB.TextBox txtOpcCboFijo 
+            Height          =   285
+            Left            =   -74880
+            MaxLength       =   100
+            TabIndex        =   17
+            Top             =   600
+            Width           =   2655
+         End
+         Begin VB.ComboBox cboFechasFecha 
+            Height          =   315
+            ItemData        =   "MantBdGeneral.pgx":0440
+            Left            =   -74880
+            List            =   "MantBdGeneral.pgx":044D
+            Style           =   2  'Dropdown List
+            TabIndex        =   16
+            Top             =   720
+            Width           =   3735
+         End
+         Begin VB.CheckBox chkNegativoNum 
+            Caption         =   "Permitir valores negativos"
+            Height          =   255
+            Left            =   -73560
+            TabIndex        =   15
+            Top             =   1080
+            Width           =   2175
+         End
+         Begin VB.CheckBox chkDecimalNum 
+            Caption         =   "Permitir valores decimales"
+            Height          =   255
+            Left            =   -73560
+            TabIndex        =   14
+            Top             =   600
+            Width           =   2175
+         End
+         Begin VB.TextBox txtMaxNum 
+            Height          =   285
+            Left            =   -74760
+            MaxLength       =   10
+            TabIndex        =   13
+            Top             =   1200
+            Width           =   855
+         End
+         Begin VB.TextBox txtMinNum 
+            Height          =   285
+            Left            =   -74760
+            MaxLength       =   10
+            TabIndex        =   12
+            Top             =   600
+            Width           =   855
+         End
+         Begin VB.TextBox txtMaximoStr 
+            Height          =   285
+            Left            =   240
+            MaxLength       =   4
+            TabIndex        =   10
+            Top             =   1200
+            Width           =   855
+         End
+         Begin VB.TextBox txtMinimoStr 
+            Height          =   285
+            Left            =   240
+            MaxLength       =   4
+            TabIndex        =   9
+            Top             =   600
+            Width           =   855
+         End
+         Begin VB.Label Label14 
+            AutoSize        =   -1  'True
+            Caption         =   "Indice campo del ItemData"
+            Height          =   195
+            Left            =   -73080
+            TabIndex        =   44
+            Top             =   960
+            Width           =   1905
+         End
+         Begin VB.Label Label13 
+            AutoSize        =   -1  'True
+            Caption         =   "Indice campo a mostrar"
+            Height          =   195
+            Left            =   -74880
+            TabIndex        =   43
+            Top             =   960
+            Width           =   1650
+         End
+         Begin VB.Label Label10 
+            AutoSize        =   -1  'True
+            Caption         =   "Tabla de origen de los datos"
+            Height          =   195
+            Left            =   -74880
+            TabIndex        =   40
+            Top             =   360
+            Width           =   2010
+         End
+         Begin VB.Label Label9 
+            AutoSize        =   -1  'True
+            Caption         =   "Combo a mostrar"
+            Height          =   195
+            Left            =   -74880
+            TabIndex        =   39
+            Top             =   960
+            Width           =   1185
+         End
+         Begin VB.Label Label8 
+            AutoSize        =   -1  'True
+            Caption         =   "Descripción de opción"
+            Height          =   195
+            Left            =   -74880
+            TabIndex        =   38
+            Top             =   360
+            Width           =   1590
+         End
+         Begin VB.Label Label7 
+            AutoSize        =   -1  'True
+            Caption         =   "Permitir fecha:"
+            Height          =   195
+            Left            =   -74880
+            TabIndex        =   37
+            Top             =   480
+            Width           =   1005
+         End
+         Begin VB.Label Label6 
+            AutoSize        =   -1  'True
+            Caption         =   "Valor mínimo"
+            Height          =   195
+            Left            =   -74760
+            TabIndex        =   36
+            Top             =   360
+            Width           =   915
+         End
+         Begin VB.Label Label5 
+            AutoSize        =   -1  'True
+            Caption         =   "Valor máximo"
+            Height          =   195
+            Left            =   -74760
+            TabIndex        =   35
+            Top             =   960
+            Width           =   930
+         End
+         Begin VB.Label Label4 
+            AutoSize        =   -1  'True
+            Caption         =   "Mín. de caract."
+            Height          =   195
+            Left            =   240
+            TabIndex        =   34
+            Top             =   360
+            Width           =   1095
+         End
+         Begin VB.Label Label3 
+            AutoSize        =   -1  'True
+            Caption         =   "Máx. de caract."
+            Height          =   195
+            Left            =   240
+            TabIndex        =   33
+            Top             =   960
+            Width           =   1110
+         End
+      End
+      Begin VB.TextBox txtNomCapo 
+         Height          =   285
+         Left            =   120
+         MaxLength       =   100
+         TabIndex        =   6
+         Top             =   480
+         Width           =   2415
+      End
+      Begin VB.Label Label15 
+         AutoSize        =   -1  'True
+         Caption         =   "Tipo de campo"
+         Height          =   195
+         Left            =   2640
+         TabIndex        =   45
+         Top             =   240
+         Width           =   1065
+      End
+      Begin VB.Label Label12 
+         AutoSize        =   -1  'True
+         Caption         =   "Indice campo"
+         Height          =   195
+         Left            =   120
+         TabIndex        =   42
+         Top             =   840
+         Width           =   960
+      End
+      Begin VB.Label Label11 
+         AutoSize        =   -1  'True
+         Caption         =   "Campos a mostrar"
+         Height          =   195
+         Left            =   120
+         TabIndex        =   41
+         Top             =   2040
+         Width           =   1260
+      End
+      Begin VB.Label Label2 
+         AutoSize        =   -1  'True
+         Caption         =   "Tipo del campo"
+         Height          =   195
+         Left            =   -3120
+         TabIndex        =   32
+         Top             =   600
+         Width           =   1095
+      End
+      Begin VB.Label Label1 
+         AutoSize        =   -1  'True
+         Caption         =   "Descripción del campo"
+         Height          =   195
+         Left            =   120
+         TabIndex        =   31
+         Top             =   240
+         Width           =   1620
+      End
+   End
+End
+Attribute VB_Name = "MantBdGeneral"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+
+'***********************************************
+'*
+'*  Grabo propiedades
+'*
+'***********************************************
+
+Private Sub PropertyPage_ApplyChanges()
+    'Se ejecuta cuando el usuario hace click en el boton aceptar o aplicar
+    'en la página de propiedades
+    On Error GoTo error
+    Dim Validacion As Boolean
+    'dependiendo del tipo de clave seleccionada depende el tipo de validación a realizar
+    If PropertyPage.SSTab2.Tab = 0 Then
+        'valido los datos para el tipo de clave determinada por usuario
+        Validacion = funValidoCoherenciaPropiedades
+    Else
+        'valido los datos para el tipo de clave correlativa
+        Validacion = funValidoCoherenciaPropiedadesCorrelativo
+    End If
+    If Validacion Then
+        SelectedControls(0).campo = funObtengoPropiedadCampo
+        SelectedControls(0).tabla = PropertyPage.txtTablaOrigenDeDatos.Text
+        SelectedControls(0).TipoClave = PropertyPage.SSTab2.Tab
+        SelectedControls(0).IndiceCampoClave = PropertyPage.txtIndiceCampoClave.Text
+        SelectedControls(0).IndiceCampoClaveContador = PropertyPage.txtIndiceCampoClaveContador.Text
+        SelectedControls(0).SugerirProxLibre = PropertyPage.chkSugerirProx.Value
+        SelectedControls(0).TablaContador = PropertyPage.txtTablaOrigenContador.Text
+        SelectedControls(0).CampoCont = PropertyPage.txtIndiceCampoContador.Text
+    Else
+        'no permito que la ventana de propiedades se cierre
+        Changed = True
+    End If
+Exit Sub
+error:
+     mSubControloErroresPropiedades "PropertyPage_ApplyChanges MantBdGeneral"
+End Sub
+
+Private Function funValidoCoherenciaPropiedadesCorrelativo() As Boolean
+    'Determina si las propiedades ingresadas fueron las correctas para la clave de tipo
+    'correclativo
+    On Error GoTo error
+    Dim descErr As String
+    Dim codErr As Byte
+    Dim i As Integer
+    
+    funValidoCoherenciaPropiedadesCorrelativo = True
+    codErr = 0
+    'verifico si ingreso indice campo clave
+    If Trim(PropertyPage.txtIndiceCampoContador.Text) = Empty Then
+        codErr = 1
+    Else
+        'verifico si ingreso nombre de tabla
+        If Trim(PropertyPage.txtTablaOrigenContador.Text) = Empty Then
+            codErr = 2
+        Else
+            'verifico si se ingreso indice del campo clave contador
+            If Trim(PropertyPage.txtIndiceCampoClaveContador.Text) = Empty Then
+                codErr = 4
+            Else
+                'verifico que el indice de la clave no se muestre en la grilla
+                'recorro grilla de campos ingresados
+                i = 2 'primera fila válida
+                Do While i < gCampos.Rows
+                    'verifico si el indice del campo clave pertenece algúnos de los campos ingresados
+                    If gCampos.TextMatrix(i, 2) = txtIndiceCampoClaveContador Then
+                        'se ingreso un campo clave que fue creado por lo tanto produsco un error
+                        codErr = 3
+                        Exit Do
+                    End If
+                    i = i + 1
+                Loop
+            End If
+        End If
+    End If
+    'si ocurrio un error muestro mensaje
+    If codErr > 0 Then
+        Select Case codErr
+            Case 1  'no se ingreso indice del campo
+                descErr = "Debe de ingresar campo índice de la tabla contador"
+                txtIndiceCampoContador.SetFocus
+            Case 2  'no se ingreso tabla de origen
+                descErr = "Debe de ingresar nombre de tabla"
+                txtTablaOrigenContador.SetFocus
+            Case 3  'no permito que el campo clave se muestra en el control
+                descErr = "El campo correlativo que se utiliza como clave" & Chr(10) & " no debe ser incluido " & _
+                "en la grilla de campos"
+                txtIndiceCampoClaveContador.SetFocus
+            Case 4  'no se ingreso campo clave contador
+                descErr = "Debe de ingresar índice del campo, que pertenece a la clave de la tabla principal. "
+                txtIndiceCampoClaveContador.SetFocus
+        End Select
+        'muestro mensaje
+        MsgBox descErr, vbExclamation
+        funValidoCoherenciaPropiedadesCorrelativo = False
+    End If
+Exit Function
+error:
+    mSubControloErroresPropiedades "funValidoCoherenciaPropiedadesCorrelativo"
+End Function
+
+Private Function funValidoCoherenciaPropiedades() As Boolean
+    'Determina si las propiedades ingresada son permitidas para la clave
+    'determinada por el usuario
+    On Error GoTo error
+    Dim i As Integer
+    Dim codErr As Byte
+    Dim descErr As String
+    
+    codErr = 6  'por defecto asumo que no se asignó un número de campo válido como clave
+    funValidoCoherenciaPropiedades = False
+    'recorro grilla de campos ingresados
+    i = 2 'primera fila válida
+    Do While i < gCampos.Rows
+        'verifico si el indice del campo clave pertenece algúnos de los campos ingresados
+        If gCampos.TextMatrix(i, 2) = txtIndiceCampoClave Then
+            'se ingreso un campo clave que fue creado
+            codErr = 0
+            funValidoCoherenciaPropiedades = True
+            'si pertenece verifico que sea del tipo permitido
+            If gCampos.TextMatrix(i, 1) = 0 Then    'string
+                'verifico que no sea un campo memo
+                If gCampos.TextMatrix(i, 6) = 1 Then
+                    codErr = 1
+                    Exit Do
+                Else
+                    'verifico que no se marque sugerir próximo
+                    If chkSugerirProx.Value = 1 Then
+                        codErr = 2
+                        Exit Do
+                    End If
+                End If
+            Else
+                If gCampos.TextMatrix(i, 1) = 1 Then 'numerico
+                    If gCampos.TextMatrix(i, 9) = 1 Then 'decimales
+                        codErr = 3
+                        Exit Do
+                    Else
+                        If gCampos.TextMatrix(i, 10) = 1 Then 'negativos
+                            codErr = 4
+                            Exit Do
+                        End If
+                    End If
+                Else
+                    If (gCampos.TextMatrix(i, 1) = 3) Or _
+                    (gCampos.TextMatrix(i, 1) = 4) Then 'combos
+                        'verifico que no se marque sugerir próximo
+                        If chkSugerirProx.Value = 1 Then
+                            codErr = 2
+                        Exit Do
+                    End If
+                    Else
+                        codErr = 5
+                        Exit Do
+                    End If
+                End If
+            End If
+        End If
+        i = i + 1
+    Loop
+    
+    If codErr > 0 Then  'se produjo un error
+        Select Case codErr
+            Case 1
+                descErr = "El campo clave no puede ser de tipo memo"
+                'le doy el focus a la grilla y marco la fila
+                gCampos.SetFocus
+                'marco la fila correspondiente al campo erroneo
+                gCampos.BackColorSel = &H8080FF    'rojo
+                mSubRangoCeldas gCampos, 0, gCampos.Cols - 1, i, i
+                
+            Case 2
+                descErr = "No se puede habilitar el boton de sugerir próximo, para campos de tipo string"
+                'le doy el focus al boton de sugerir próximo
+                chkSugerirProx.SetFocus
+                
+            Case 3
+                descErr = "Una clave numérica no puede ser un valor decimal"
+                'le doy el focus a la grilla y marco la fila
+                gCampos.SetFocus
+                'marco la fila correspondiente al campo erroneo
+                gCampos.BackColorSel = &H8080FF    'rojo
+                mSubRangoCeldas gCampos, 0, gCampos.Cols - 1, i, i
+                
+            Case 4
+                descErr = "Una clave numérica no puede ser un valor negativo"
+                'le doy el focus a la grilla y marco la fila
+                gCampos.SetFocus
+                'marco la fila correspondiente al campo erroneo
+                gCampos.BackColorSel = &H8080FF    'rojo
+                mSubRangoCeldas gCampos, 0, gCampos.Cols - 1, i, i
+                
+            Case 5
+                descErr = "El tipo de campo elegido como clave no se puede manejar" & Chr(10) & _
+                        "Los tipos permitidos son: string, numérico y combos"
+                'le doy el focus al control que ingresa el indice del campo clave
+                txtIndiceCampoClave.SetFocus
+            Case 6
+                descErr = "El campo clave que seleccionó, no fue creado en la grilla de campos."
+                'le doy el focus al control que ingresa el indice del campo clave
+                txtIndiceCampoClave.SetFocus
+        
+        End Select
+        'muestro mensaje
+        MsgBox descErr, vbExclamation
+        funValidoCoherenciaPropiedades = False
+    End If
+Exit Function
+error:
+    mSubControloErroresPropiedades "funValidoCoherenciaPropiedades MantBdGeneral"
+End Function
+'************************************************************
+'*
+'*  Con los datos ingresados por el usuario en la página
+'*  de propiedades, genero un string con la información
+'*  de la propiedad campo
+'*
+'************************************************************
+
+Private Function funObtengoPropiedadCampo() As String
+    'Recorro la grilla de propiedades y creo con sus datos un string
+    'con toda esa información la cual se asignará a la propiedad
+    On Error GoTo error
+    Dim i As Integer
+    Dim camposProcesados As String
+    'recorro grilla
+    i = 2   'comienzo por la primer fila que contenga datos
+    Do While i < PropertyPage.gCampos.Rows
+            camposProcesados = camposProcesados & funProcesoFila(i) & "@"
+        i = i + 1
+    Loop
+    funObtengoPropiedadCampo = camposProcesados
+Exit Function
+error:
+    mSubControloErroresPropiedades "FunObtengoPropiedadCampo MantBdGeneral"
+End Function
+
+Private Function funProcesoFila(fila As Integer) As String
+    'Con cada línea de la grilla obengo un string, con el formato correspondiente
+    'al utilizado para representar cada campo a mostrar
+    On Error GoTo error
+    Dim campo As String
+    Dim i As Byte
+    PropertyPage.gCampos.Row = fila    'trabajo con la fila indicada
+    
+    'recorro todos los campos de la grilla en la fila correspondinete
+    For i = 0 To PropertyPage.gCampos.Cols - 1
+        PropertyPage.gCampos.Col = i
+        campo = campo & PropertyPage.gCampos.Text & ";"
+    Next
+    'elimino ultima coma
+    campo = Mid(campo, 1, Len(campo) - 1)
+    funProcesoFila = campo
+Exit Function
+error:
+    mSubControloErroresPropiedades "funProcesoFila MantBdGeneral"
+End Function
+
+'*********************************************************
+'*
+'*  Muestro datos en propiedades en página de peopiedades
+'*
+'*********************************************************
+
+Private Sub PropertyPage_SelectionChanged()
+    'Ejecuto al abrir página de propiedades o al cambiar de control
+    On Error GoTo error
+    Dim campos As String
+          
+    'NOTA: por algún motivo que no pude determinar este evento se ejecuta dos veces:
+    'cuando llamo a la página de propiedades la primera vez después de haber creado
+    'la instancia en tiempo de diseño del control
+    
+    'inicializo grilla
+    PropertyPage.gCampos.Clear
+    mSubLimpioGrilla PropertyPage.gCampos, True
+    'Cero cabezal de grilla
+    PropertyPage.gCampos.FormatString = "Descripción campo | " & _
+                                        "Tipo| " & _
+                                        "Ind.| " & _
+                                        "Per. blanco | " & _
+                                        "MinStr | " & _
+                                        "MaxStr | " & _
+                                        "Memo | " & _
+                                        "MinNum | " & _
+                                        "MaxNum | " & _
+                                        "Deci. | " & _
+                                        "Nega. | " & _
+                                        "Fecha | " & _
+                                        "Opciones     | " & _
+                                        "Tabla        | " & _
+                                        "Ind. |" & _
+                                        "Ind. ItemData "
+
+    
+    'solo ejecuto si selecciono un control a la vez
+    If SelectedControls.Count = 1 Then
+        'asigno el valor de la propiedad campo
+        campos = SelectedControls(0).campo
+        PropertyPage.txtTablaOrigenDeDatos.Text = SelectedControls(0).tabla
+        PropertyPage.SSTab2.Tab = SelectedControls(0).TipoClave
+        PropertyPage.txtIndiceCampoClave.Text = SelectedControls(0).IndiceCampoClave
+        PropertyPage.chkSugerirProx.Value = SelectedControls(0).SugerirProxLibre
+        PropertyPage.txtTablaOrigenContador.Text = SelectedControls(0).TablaContador
+        PropertyPage.txtIndiceCampoContador.Text = SelectedControls(0).CampoCont
+        PropertyPage.txtIndiceCampoClaveContador.Text = SelectedControls(0).IndiceCampoClaveContador
+        subMuestroPropiedadCampo campos
+    End If
+    PropertyPage.Refresh
+Exit Sub
+error:
+    mSubControloErroresPropiedades "PropertyPage_SelectionChanged MantBdGeneral"
+End Sub
+
+'*************************************************************************
+'*
+'*  Muestro la propiedad campo en la página de propiedades corresponiente
+'*
+'**************************************************************************
+
+Private Sub subMuestroPropiedadCampo(campos As String)
+    'Recorro el string y muestro información de campos en grilla
+    On Error GoTo error
+    Dim largo As String
+    Dim cadaCampo As String
+    Dim caracter As String
+    
+    Dim i As Integer
+    
+    largo = Len(campos)
+    i = 1
+    Do While i <= largo
+        caracter = Mid(campos, i, 1)    'obtengo todos y cada uno de los caracteres
+                                        'que componen la propiedad campos
+        If caracter = ";" Then  '; indica nuevo campo
+            'cada campo se asigna a una columna diferente en la grilla de campos
+            caracter = Chr(9)   'chr(9) indica nueva columna
+        End If
+        If caracter = "@" Then  '@ indica que finaliza el campo
+            'creo una fila en la grilla de campos
+            PropertyPage.gCampos.AddItem ""
+            mSubRangoCeldas PropertyPage.gCampos, 0, _
+                            PropertyPage.gCampos.Cols - 1, _
+                            PropertyPage.gCampos.Rows - 1, _
+                            PropertyPage.gCampos.Rows - 1
+            PropertyPage.gCampos.Clip = cadaCampo
+            cadaCampo = ""  'inicializo para cargar información de un nuevo campo
+        Else
+            cadaCampo = cadaCampo & caracter
+        End If
+        i = i + 1
+    Loop
+Exit Sub
+error:
+    mSubControloErroresPropiedades "subMuestroPropiedadCampo MantBdGeneral"
+End Sub
+
+'***************************************************************
+'*
+'*  Muestro los datos ingresados en la grilla de campos
+'*
+'*
+'**************************************************************
+Private Sub botAgregarVal_Click()
+    'Muestro nuevo campo en grilla
+    On Error GoTo error
+    If funValidoDatos Then
+        Changed = True  'indico que se ha cambiado una propiedad
+        'creo nueva línea en la grilla
+        PropertyPage.gCampos.AddItem funCreoLineaParaGrilla
+        'inicializo todos los controles para ingresar un nuevo campo
+        subLimpioControlesFormulario
+    End If
+Exit Sub
+error:
+    mSubControloErroresPropiedades "botAgregarClick MantBdGeneral"
+End Sub
+
+Private Function funCreoLineaParaGrilla() As String
+    'Recorro todos los valores de las propiedades y creo una cadena con ellos.
+    'la cual sera será almacenada en la grilla
+    On Error GoTo error
+    funCreoLineaParaGrilla = _
+        PropertyPage.txtNomCapo.Text & Chr(9) & _
+        PropertyPage.SSTab1.Tab & Chr(9) & _
+        PropertyPage.txtIndiceCampo.Text & Chr(9) & _
+        PropertyPage.chkIngresarEnBlanco.Value & Chr(9) & _
+        funTipoStr & Chr(9) & _
+        funTipoNum & Chr(9) & _
+        funTipoFecha & Chr(9) & _
+        funTipoComboFijo & Chr(9) & _
+        PropertyPage.txtTablaOrigenCboArch.Text & Chr(9) & _
+        PropertyPage.txtIndiceTablaOpciones.Text & Chr(9) & _
+        PropertyPage.txtIndiceItemDatacboArch.Text
+Exit Function
+error:
+    mSubControloErroresPropiedades "funCreoLineaParaGrilla MantBdGeneral"
+End Function
+
+Private Function funValidoDatos() As Boolean
+    'Verifica que los datos ingresados sen válidos
+    On Error GoTo error
+    Dim numErr As Byte
+    Dim descErr As String
+    Dim focus As Object
+    
+    funValidoDatos = True
+    numErr = 0
+    'debo de ingresar descripción del campo
+    If Trim(PropertyPage.txtNomCapo.Text) = Empty Then
+        numErr = 1
+        Set focus = PropertyPage.txtNomCapo
+    Else
+        'debo de ingresar indice del campo en tabla de base de datos
+        If Trim(PropertyPage.txtIndiceCampo) = Empty Then
+            numErr = 2
+            Set focus = PropertyPage.txtIndiceCampo
+        Else
+            'realizo los controles correspondientes al tipo de campo ingresados
+            Select Case PropertyPage.SSTab1.Tab
+                Case 0  'tipo string
+                    If Val(PropertyPage.txtMinimoStr) < 1 Then
+                        'simpre tengo que ingresar por lo menos un caracter en el campo
+                        'al momento de ingresar datos en la grilla
+                        PropertyPage.txtMinimoStr.Text = 1
+                    End If
+                    'debo de ingresar máximo
+                    If Trim(PropertyPage.txtMaximoStr) = Empty Then
+                        numErr = 4
+                        Set focus = PropertyPage.txtMaximoStr
+                    Else
+                        'valido minimo menor igual a maximo
+                        If Val(PropertyPage.txtMinimoStr) > Val(PropertyPage.txtMaximoStr) Then
+                            numErr = 3
+                            Set focus = PropertyPage.txtMinimoStr
+                        Else
+                            'valido que el máximo no sea mayor a 255 si no es un campo memo
+                            If Val(PropertyPage.txtMaximoStr) > 255 And _
+                            PropertyPage.chkCampoMemoStr.Value = 0 Then
+                                numErr = 11
+                                Set focus = PropertyPage.txtMaximoStr
+                            End If
+                        End If
+                    End If
+                Case 1  'tipo numérico
+                    'debo de ingresar mínimo
+                    If Trim(PropertyPage.txtMinNum) = Empty Then
+                        numErr = 10
+                        Set focus = PropertyPage.txtMinNum
+                    Else
+                        'debo de ingresar máximo
+                        If Trim(PropertyPage.txtMaxNum) = Empty Then
+                            numErr = 4
+                            Set focus = PropertyPage.txtMaxNum
+                        Else
+                            'valido minmo menor igual a maximo
+                            If Val(PropertyPage.txtMinNum) > Val(PropertyPage.txtMaxNum) Then
+                                numErr = 3
+                                Set focus = PropertyPage.txtMinNum
+                            End If
+                        End If
+                    End If
+                        
+                Case 2  'tipo fecha
+                    If PropertyPage.cboFechasFecha.ListIndex = -1 Then
+                        numErr = 5
+                        Set focus = PropertyPage.cboFechasFecha
+                    End If
+                Case 3  'tipo combo opción
+                    If PropertyPage.cboOpcionesCboFijo.ListCount = 0 Then
+                        numErr = 6
+                        Set focus = PropertyPage.cboOpcionesCboFijo
+                    End If
+                Case 4  'tipo combo archivo
+                    If Trim(PropertyPage.txtTablaOrigenCboArch) = Empty Then
+                        numErr = 7
+                        Set focus = PropertyPage.txtTablaOrigenCboArch
+                    Else
+                        If Trim(PropertyPage.txtIndiceTablaOpciones) = Empty Then
+                            numErr = 8
+                            Set focus = PropertyPage.txtIndiceTablaOpciones
+                        Else
+                            If Trim(PropertyPage.txtIndiceItemDatacboArch) = Empty Then
+                                numErr = 9
+                                Set focus = PropertyPage.txtIndiceItemDatacboArch
+                            End If
+                        End If
+                    End If
+            End Select
+        End If
+    End If
+    'si se produjo un error muestro mensaje
+    If numErr > 0 Then
+        Select Case numErr
+            Case 1
+                descErr = "Debe de ingresar descripción del campo."
+            Case 2
+                descErr = "Debe de ingresar índice del campo."
+            Case 3
+                descErr = "El mínimo no puede ser mayor que le máximo."
+            Case 4
+                descErr = "Debe de ingresar máximo."
+            Case 5
+                descErr = "Debe de ingresar tipo de validación de fechas."
+            Case 6
+                descErr = "Debe de ingresar por lo menos una opción al combo de opciones."
+            Case 7
+                descErr = "Debe de ingresar el nombre de la tabla que desea mostrar."
+            Case 8
+                descErr = "Debe de ingresar el índice del campo con el cual se desea cargar el combo de opciones."
+            Case 9
+                descErr = "Debde de ingresar el índice del campo con el cual se caragará la propiedad ItemData del combo."
+            Case 10
+                descErr = "Debe de ingresar mínimo."
+            Case 11
+                descErr = "El máximo de caracteres de un campo de tipo string son 255."
+        End Select
+        MsgBox descErr, vbExclamation
+        funValidoDatos = False
+        focus.SetFocus
+        Set focus = Nothing     'rompo la referncia al objeto
+    End If
+Exit Function
+error:
+    mSubControloErroresPropiedades "funValidoDatos MantBdGeneral"
+End Function
+
+Private Function funTipoStr() As String
+    'Devuelvo los valores correspondientes al tipo de dato string
+    On Error GoTo error
+    If PropertyPage.SSTab1.Tab = 0 Then 'string
+        funTipoStr = PropertyPage.txtMinimoStr.Text & Chr(9) & _
+                    PropertyPage.txtMaximoStr.Text & Chr(9) & _
+                    PropertyPage.chkCampoMemoStr.Value
+    Else
+        funTipoStr = Chr(9) & Chr(9)
+    End If
+Exit Function
+error:
+    mSubControloErroresPropiedades "funTipoStr MantBdGeneral"
+End Function
+
+Private Function funTipoNum() As String
+    'Devulevo los valores correspondientes al tipo de dato numérico
+    On Error GoTo error
+    If PropertyPage.SSTab1.Tab = 1 Then 'numérico
+        funTipoNum = PropertyPage.txtMinNum.Text & Chr(9) & _
+                    PropertyPage.txtMaxNum.Text & Chr(9) & _
+                    PropertyPage.chkDecimalNum.Value & Chr(9) & _
+                    PropertyPage.chkNegativoNum.Value
+    Else
+        funTipoNum = Chr(9) & Chr(9) & Chr(9)
+    End If
+Exit Function
+error:
+    mSubControloErroresPropiedades "funTiponum MantBdGeneral"
+End Function
+
+Private Function funTipoFecha() As String
+    'Devuelvo los valores correspondientes al tipo de dato fecha
+    On Error GoTo error
+    If PropertyPage.SSTab1.Tab = 2 Then 'fecha
+        funTipoFecha = PropertyPage.cboFechasFecha.ListIndex
+    Else
+        funTipoFecha = ""
+    End If
+Exit Function
+error:
+    mSubControloErroresPropiedades "funTipoFecha MantBdGeneral"
+End Function
+
+Private Function funTipoComboFijo() As String
+    'Devulevo los valores correspondientes al tipo de dato combo fijo
+    On Error GoTo error
+    Dim aux As String
+    Dim i As Integer
+    
+    If PropertyPage.SSTab1.Tab = 3 Then 'combo fijo
+        'recorro el combo y creo una cadena con todos los elementos
+        i = 0
+        Do While i < PropertyPage.cboOpcionesCboFijo.ListCount
+            aux = aux & PropertyPage.cboOpcionesCboFijo.List(i) & "#"
+            i = i + 1
+        Loop
+        funTipoComboFijo = aux
+    Else
+        funTipoComboFijo = ""
+    End If
+Exit Function
+error:
+    mSubControloErroresPropiedades "funTipoComboFijo MantBdGeneral"
+End Function
+
+'************************************************************
+'*
+'*      Valido el ingreso de números en los campos numéricos
+'*
+'************************************************************
+
+Private Sub txtIndiceCampo_KeyPress(KeyAscii As Integer)
+    'Valido solo el ingreso de números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+
+Private Sub txtIndiceItemDatacboArch_KeyPress(KeyAscii As Integer)
+    'Valido solo el ingreso de números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+Private Sub txtIndiceTablaOpciones_KeyPress(KeyAscii As Integer)
+    'Valido solo el ingreso de números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+Private Sub txtMaximoStr_KeyPress(KeyAscii As Integer)
+    'Valido solo el ingreso de números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+Private Sub txtMaxNum_KeyPress(KeyAscii As Integer)
+    'Valido solo el ingreso de números
+    'configuro el ingreso de dígitos, dependiendo si el campo puede ingresasr negativos o decimales.
+    mSubValidoNum KeyAscii, CBool(PropertyPage.chkNegativoNum.Value), CBool(PropertyPage.chkDecimalNum.Value)
+End Sub
+
+Private Sub txtMinimoStr_KeyPress(KeyAscii As Integer)
+    'Valido solo el ingreso de números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+Private Sub txtMinNum_KeyPress(KeyAscii As Integer)
+    'Valido solo el ingreso de números
+    'configuro el ingreso de dígitos, dependiendo si el campo puede ingresasr negativos o decimales.
+    mSubValidoNum KeyAscii, CBool(PropertyPage.chkNegativoNum.Value), CBool(PropertyPage.chkDecimalNum.Value)
+End Sub
+
+Private Sub txtOpcCboFijo_KeyPress(KeyAscii As Integer)
+    'Controlo el ingreso de ciertos caracteres
+    KeyAscii = funValidoCaracteres(KeyAscii)
+End Sub
+
+Private Sub txtNomCapo_KeyPress(KeyAscii As Integer)
+    'Controlo el ingreso de ciertos caracteres
+    KeyAscii = funValidoCaracteres(KeyAscii)
+End Sub
+
+Private Sub chkSugerirProx_Click()
+    Changed = True
+End Sub
+
+Private Sub chkDecimalNum_Click()
+    'Cada vez que doy click en inicializo el valor máximo y mínimo
+    'de los numericos
+    PropertyPage.txtMaxNum.Text = Empty
+    PropertyPage.txtMinNum.Text = Empty
+End Sub
+
+Private Sub chkNegativoNum_Click()
+    'Cada vez que doy click en inicializo el valor máximo y mínimo
+    'de los numericos
+    PropertyPage.txtMaxNum.Text = Empty
+    PropertyPage.txtMinNum.Text = Empty
+End Sub
+
+Private Sub txtIndiceCampoClave_Change()
+    Changed = True
+End Sub
+
+Private Sub txtIndiceCampoClave_KeyPress(KeyAscii As Integer)
+    'Valido solo el ingreso de números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+Private Sub txtIndiceCampoContador_Change()
+    Changed = True
+End Sub
+
+Private Sub txtIndiceCampoContador_KeyPress(KeyAscii As Integer)
+    'Valido solo el ingreso de números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+Private Sub txtIndiceCampoClaveContador_KeyPress(KeyAscii As Integer)
+    'Valido solo el ingreso de números
+    mSubValidoNum KeyAscii, False, False
+End Sub
+
+Private Sub txtIndiceCampoClaveContador_Change()
+    Changed = True
+End Sub
+
+Private Sub txtTablaOrigenContador_Change()
+    Changed = True
+End Sub
+
+Private Sub txtTablaOrigenDeDatos_Change()
+    Changed = True
+End Sub
+
+'*************************************************************
+'*
+'*  Procedimientos de operación de la grilla
+'*
+'*************************************************************
+
+Private Sub botEliminarVal_Click()
+    'Elimino un elmento de la grilla
+    On Error GoTo error
+    Changed = True  'indico que se ha cambiado una propiedad
+    
+    'no permito eliminar la primer fila fija, ya que sino cancela
+    If PropertyPage.gCampos.Row > 1 Then
+        PropertyPage.gCampos.RemoveItem (PropertyPage.gCampos.Row)
+    End If
+Exit Sub
+error:
+    mSubControloErroresPropiedades "botEliminarVal_Click MantBdGeneral"
+End Sub
+
+Private Sub botAgregarCboFijo_Click()
+    'Almaceno en el combo de opciones la opción ingresada
+    On Error GoTo error
+    'no permito ingresar una opcíon en blanco
+    If Trim(PropertyPage.txtOpcCboFijo) <> Empty Then
+        PropertyPage.cboOpcionesCboFijo.AddItem PropertyPage.txtOpcCboFijo.Text
+        'limpio caja de texto para nuevo ingreso
+        PropertyPage.txtOpcCboFijo.Text = ""
+        'me posiciono en el primer elemento del combo
+        PropertyPage.cboOpcionesCboFijo.ListIndex = PropertyPage.cboOpcionesCboFijo.ListCount - 1
+        'le doy el focus al control de ingreso de nueva opción
+        PropertyPage.txtOpcCboFijo.SetFocus
+    End If
+Exit Sub
+error:
+    mSubControloErroresPropiedades "botAgregarCboFijo MantBdGeneral"
+End Sub
+
+Private Sub botEliminarCboFijo_Click()
+    'Elimino en el combo de opciones la opción seleccionada
+    On Error GoTo error
+    If PropertyPage.cboOpcionesCboFijo.ListIndex > -1 Then
+        PropertyPage.cboOpcionesCboFijo.RemoveItem (PropertyPage.cboOpcionesCboFijo.ListIndex)
+    End If
+Exit Sub
+error:
+    mSubControloErroresPropiedades "botEliminarCboFijo_Click MantBdGeneral"
+End Sub
+
+Private Sub subLimpioControlesFormulario()
+    'inicializo todos los controles para ingresar un nuevo campo
+    On Error GoTo error
+    PropertyPage.txtNomCapo.Text = ""
+    PropertyPage.txtIndiceCampo.Text = ""
+    PropertyPage.txtMinimoStr.Text = ""
+    PropertyPage.txtMaximoStr.Text = ""
+    PropertyPage.chkCampoMemoStr.Value = 0
+    PropertyPage.txtMinNum.Text = ""
+    PropertyPage.txtMaxNum.Text = ""
+    PropertyPage.chkDecimalNum.Value = 0
+    PropertyPage.chkNegativoNum.Value = 0
+    PropertyPage.cboFechasFecha.ListIndex = 0
+    PropertyPage.cboOpcionesCboFijo.ListIndex = -1
+    PropertyPage.txtOpcCboFijo.Text = ""
+    PropertyPage.txtTablaOrigenCboArch.Text = ""
+    PropertyPage.txtIndiceTablaOpciones.Text = ""
+    PropertyPage.chkIngresarEnBlanco.Value = 0
+    PropertyPage.txtIndiceItemDatacboArch.Text = ""
+    'inicializo el combo de opciones fijas
+    mSubLimpioCombo PropertyPage.cboOpcionesCboFijo
+Exit Sub
+error:
+    mSubControloErroresPropiedades "funLimpioControlesFormulario MantBdGeneral"
+End Sub
+
+Private Function funValidoCaracteres(caracter As Integer) As Integer
+    'como utilizo ciertos caracteres para poder diferenciar la información el el
+    'string que contiene los datos de la propiedad campo, me aseguro de que esos
+    'caracteres no sean ingresados por el usuario
+    Select Case caracter
+        Case 64  '@
+            caracter = 0
+        Case 35  '#
+            caracter = 0
+        Case 59  ';
+            caracter = 0
+        Case Else
+            funValidoCaracteres = caracter
+    End Select
+End Function
+
+Private Sub botBajar_Click()
+    'Bajo el campo seleccionado una posición
+    mSubBajarLinea gCampos
+    Changed = True
+End Sub
+
+Private Sub botSubir_Click()
+    'Subo el campo seleccionado una posición
+    mSubSubirLinea gCampos
+    Changed = True
+End Sub
+
