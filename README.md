@@ -1,4 +1,4 @@
-﻿EasyHotel![](Aspose.Words.24cccf74-fd5b-4741-93ee-509815281bae.001.png)
+
 
 1. **¿Qué es EasyHotel?.**
 
@@ -419,5 +419,4 @@ También ponemos a su disposición la versión demo EasyHotel 1.0, la cual podr�
 
 Desde ya, muchas gracias.
 
-Gabriel Aramburu  (042) 22 80 14 garambu@montevideo.com.uy Marcos Bernini  (042) 77 42 56 mbernini@montevideo.com.uy![](Aspose.Words.24cccf74-fd5b-4741-93ee-509815281bae.002.png)
-Documento presentación Página 21
+
