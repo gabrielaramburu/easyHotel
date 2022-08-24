@@ -1,4 +1,4 @@
-
+[Info en pdf](documentoPresentaciónEasyHotel.pdf)
 
 1. **¿Qué es EasyHotel?.**
 
